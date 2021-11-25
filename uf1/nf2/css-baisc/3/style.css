@@ -1,0 +1,122 @@
+.f1{
+    font-family: Georgia;
+    color: orange;
+}
+
+.f2{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.f3{
+    text-decoration: underline;
+}
+
+
+.f3-::first-letter{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.f4{
+    color: blue;
+    background: yellow;
+    padding: 5mm;
+}
+
+.f5{
+    line-height: 2em;
+    text-align: right; 
+    width: 150px;
+}
+
+.f6{
+    letter-spacing: 1em;
+    word-spacing: 2em;
+}
+.caja-s{
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 900;
+}
+.caja-s p {
+    color: blue;
+    font-weight: 900;
+}
+
+.caja{
+    width: 200px;
+    height: 350px;
+    border: 5px solid;
+    display: inline-table;
+    margin: 10px;
+
+}
+
+.box-16{
+    display: inline-table;
+    margin: 0px 50px;
+}
+.b{
+    color: #000;
+}
+.o{
+    color: orange;
+}
+
+ul{
+    list-style-image: url('a.gif');
+
+}
+.amarillo{
+    width: auto;
+    height: auto;
+    background: rgb(255, 255, 153);
+    display: inline-grid;
+    padding: 0px 10px;
+}
+
+.pdf{
+    width: 15px;
+    margin: 1px 4px -2px 0px;
+}
+.word{
+    width: 15px;
+    margin: 1px 4px -2px 0px;
+}
+.txt{
+    width: 15px;
+    margin: 1px 4px -2px 0px;
+}
+.mp3{
+    width: 15px;
+    margin: 1px 4px -2px 0px;
+}
+.img{
+    width: 15px;
+    margin: 1px 4px -2px 0px;
+}
+
+
+.a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #0059ff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   .a:hover{
+       background-color: #2e97ff;
+   
+   }
+   .a:active{
+       background-color: #0065ca;
+   
+   }

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cots</title>
+    <link rel="stylesheet" href="css/syle-a.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>1 CSS natiu
+    </h1>
+    <hr>
+    <p>1. Posa un exemple d'ús de variables CSS natives. </p>
+    <hr>
+    <br>
+    <div>
+        <pre>
+    :root{
+        --negro: #000;
+    }
+
+    .box{
+        width: 25px;
+        height: 25px;
+        background-color: var(--negro);
+    }
+
+    Resultado: 
+        </pre>    
+        <div class="box"></div>
+    </div>
+    <br><hr><p>2. Tenint en compte la següent imatge, posa un exemple on quedi clar el concepte d'herència i cascada en les variables natives CSS:
+    </p><hr><br>
+    <pre>
+    .c{
+        background-color: var(--negro);
+        background-color: blue;
+    }
+    
+    Resultado:
+    <div class="box c"></div>
+
+    </pre>
+    <br><hr><p>3. Torna a efectuar l'últim exercici del bloc CSS_bàsic_5, aplicant variables per totes aquelles propietats CSS que es repeteixen almenys en 2 elements HTML. </p><hr><br>
+
+    <div class="cab-3">
+            <div id="contenedor">
+                <div class="cabecera">
+                    <p>Cabecera</p>
+                </div>
+                <div id="menu">
+                    <a href="">Menú 1</a><br><br>
+                    <a href="">Menú 2</a>
+                </div>
+                <div class="contenido">
+                    <div class="principal">
+                        <p class="p-1-5"><img class="img-5" src="h.jpg" alt="">Los orígenes de la hamburguesa son inciertos, pero posiblemente fuese  elaborada por primera vez en el periodo de tiempo que va desde finales del siglo XIX hasta comienzos del XX. La hamburguesa moderna nace de las necesidades culinarias de una sociedad que disfruta de los beneficios de una reciente industrialización y que, debido a ella, vive más deprisa. El origen de este alimento procesado es poco claro debido principalmente a que son muchas las personas (todos ellas estadounidenses), las que se disputan el honor de haber sido el primero en poner dos rebanadas de pan a un filete de carne picada de vacuno («Hamburger steak»). Poco después de componer la hamburguesa con sus dos panes, comenzó a aderezarse con todos sus acompañamientos característicos: cebollas, hojas de lechuga, rebanadas de encurtidos, bebidas, etc. Cabe destacar que los ingredientes básicos empleados en su elaboración, es decir, el pan y la carne de vacuno, se consumían por separado desde hacía mucho tiempo.</p>
+                    </div>
+                    <div class="secundario">
+                        <div class="anuncio">
+                            <p>Colocar aquí tu anincio favorito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <p>pie
+            
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    <br><hr><br>
+    <h1>2 Preprocessadors CSS (Sass)</h1>
+    <hr><p>4. Digues el nom+URL de 3 preprocessadors CSS, a banda de Sass</p> <hr>
+        <div class="c-4">
+            <li><a>SASS</a></li>
+            <li><a>LESS</a></li>
+            <li><a>Stylus</a></li>
+            <li><a>PostCSS</a></li>
+        </div>
+        <br><hr><p>5. Posa un exemple d'utilització de variables amb Sass.</p><hr><br>
+
+            <p class="c-5">Color rojo pueso con varualbe de scss</p>
+
+    <br><hr><p>6. Genera el codi Sass que compilaria al següent CSS, utilitzant propietats aniuades (https://www.w3schools.com/sass/sass_nesting.asp) .Afegeix comentaris per explicar-ho:</p><hr><br>
+     
+    <p class="sweet">Ejemplo propietats aniuades</p>
+
+    <br><hr><p>7. Utilitza les propietats i les regles aniuades de Sass (https://www.w3schools.com/sass/sass_nesting.asp) per tornar a refer l'exercici 5 de CSS_basic_1. </p><hr><br>
+
+    <div class="qq">
+        <div id="ww">
+            <div class="dd">
+                <p>Cabecera</p>
+            </div>
+            <div id="ff">
+                <a href="">Menú 1</a><br><br>
+                <a href="">Menú 2</a>
+            </div>
+            <div class="vv">
+                <div class="bb">
+                    <p class="rr"><img class="ii" src="h.jpg" alt="">Los orígenes de la hamburguesa son inciertos, pero posiblemente fuese  elaborada por primera vez en el periodo de tiempo que va desde finales del siglo XIX hasta comienzos del XX. La hamburguesa moderna nace de las necesidades culinarias de una sociedad que disfruta de los beneficios de una reciente industrialización y que, debido a ella, vive más deprisa. El origen de este alimento procesado es poco claro debido principalmente a que son muchas las personas (todos ellas estadounidenses), las que se disputan el honor de haber sido el primero en poner dos rebanadas de pan a un filete de carne picada de vacuno («Hamburger steak»). Poco después de componer la hamburguesa con sus dos panes, comenzó a aderezarse con todos sus acompañamientos característicos: cebollas, hojas de lechuga, rebanadas de encurtidos, bebidas, etc. Cabe destacar que los ingredientes básicos empleados en su elaboración, es decir, el pan y la carne de vacuno, se consumían por separado desde hacía mucho tiempo.</p>
+                </div>
+                <div class="xx">
+                    <div class="zz">
+                        <p>Colocar aquí tu anincio favorito</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gg">
+                <p>pie
+        
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><hr><p>8. Posa dos exemples d'utilització de la directiva @mixin + @include (https://www.w3schools.com/sass/sass_mixin_include.asp), un dels exemples cal que utilitzi alguna variable. És veritat que són equivalens @mixin important-text { } i @mixin important_text { }? Demostra-ho amb un exemple. </p><hr><br>
+    <pre>
+        @mixin name {
+            background-color: rgb(99, 99, 214);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+        
+         .btn-falso{
+             font-size: 20px;
+             @include name;
+            text-decoration: none;
+            }
+
+            RESULTADO:
+    </pre>
+    <a class="btn-falso">Boton</a>
+
+    <pre>
+
+        @mixin f($color){
+            $px: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            background: $color;
+         }
+        
+         .btn-f{
+             font-size: 20px;
+             @include f(rgb(66, 247, 232));
+            text-decoration: none;
+            
+        }
+
+        RESULTADO CON VARIABLE:
+    </pre>
+
+    <a class="btn-f">Variable</a>
+
+    <br><br><hr><p>9. Quina és la diferència entre la directiva @import a CSS natiu i Sass? (https://www.w3schools.com/sass/sass_import.asp). 
+    </p><hr><br>
+    <p>
+        Con el @import en <b>scss</b> puedes incluir codigo de un <b>scss</b> externo a el <b>scss</b> que estas utilizando, para si no tener que poner otro <link> en el html y en <b>css</b> funciona igual pero con <b>css</b>
+    </p>
+    <br><hr><p>Posa un exemple d'herència (https://www.w3schools.com/sass/sass_extend.asp) per crear 3 tipus de botons: el botó "normal", el botó de cancel·lar (vermell, negatiu) i el botó d'acceptar (verd, positiu). Afegeix als botons els estats hover i active utilitzant l'operador & de Sass i variables pels colors dels botons.</p><hr><br>
+
+    <a href="" class="btn-normal">Normal</a>
+    <a href="" class="btn-canelar">Canelar</a>
+    <a href="" class="btn-acceptar">acceptar</a>
+
+    <br><br><hr><p>11. Utilitzant la directva @each, es poden crear bucles a partir de llistes. Fixa't en el següent exemple</p><hr><br>
+
+    <ul>
+        <li class="dilluns">Dilluns</li>
+        <li class="dimarts">Dimarts</li>
+        <li class="dimecres">Dimecres</li>
+        <li class="dijous">Dijous</li>
+        <li class="divendres">Divendres</li>
+        <li class="dissabte">Dissabte</li>
+        <li class="diumenge">Diumenge</li>
+    </ul>
+    <br><hr><p>12. Utilitzant alguna de les següents directives (@each, @for o @while, documentació aquí), implementa un codi per tal de crear aquestes 4 classes i les seves propietats:</p><hr><br>
+
+    <pre>
+<b>        Codigo scss:</b>
+
+        $W: 0;
+        @for $i from 1 through 4 {
+            .c-#{$i} {
+            width:($W+25%);
+            }
+            $W: $W + 25;
+        }
+
+<b>        Resultado en css:
+</b>
+        .c-1 {
+            width: 25%;
+          }
+          
+          .c-2 {
+            width: 50%;
+          }
+          
+          .c-3 {
+            width: 75%;
+          }
+          
+          .c-4 {
+            width: 100%;
+          }
+          
+    </pre>
+
+    <br><hr><p>16. Genera el codi Sass, que compilaria al següent CSS, afegeix comentaris per explicar-ho:
+
+    </p><hr><br>
+
+<pre>
+    <b>Resultado final a scss</b>
+
+    .nav { // ponemos el :hover y el (.nav .dropdown) dentro del .nav
+        color: silver;
+        font: {  // propietats aniuades
+            family: Verdana, sans-serif ; 
+            size: 12px ;
+            weight: 500 ;
+        }
+        
+        &:hover {
+            border: { // propietats aniuades
+                color: skyblue ;
+                radius: 3px ;
+            }
+    
+        }
+        .dropdown{ 
+            max: { // propietats aniuades
+                height: 60px ;
+                width: 30px ;
+            }
+            position: absolute;
+        } 
+    }
+    .nav .link div,
+       .nav .btn div {
+        display: inline-block ;
+        position: relative ;
+        text: { // propietats aniuades
+            align: center ;
+            decoration: none ;
+            indent: 12px ;
+        }
+    }
+</pre>
+<br><hr><p>17. Tradueix el següent codi fet amb Sass, al seu corresponent CSS, afegeix comentaris per explicar-ho:
+</p><hr><br>
+<pre>
+    <b>Resultado a CSS:</b>
+
+    .message {
+        color: #911111; //esto era la variable $dark-red
+        font-family: "Roboto", sans-serif;
+      }
+      .message:hover { // hover
+        background: compliment(#911111); // esto era la variable $dark-red
+      }
+      .message .message-item {
+        padding: 10px;
+        margin: 2px;
+        font-size: 0.9rem;  // los 'font' eran una porpietats aniuades
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      
+</pre>
+<br><hr><p>18. A partir de l'HTML que es troba a la carpeta material/sass18.html, crea el codi Sass (sense canviar el codi HTML), per tal que la pàgina es visualitzi com la imatge que es troba a la carpeta material/sass18.png.</p><hr><br><br>
+<div class="lil">
+    <a class="lil-pump" href="sass18.html">VISUALIZAR</a>
+</div>
+<br><br><hr><p>19. [opcional] A partir de l'HTML que es troba a la carpeta material/sass19.html, crea el codi Sass (sense canviar el codi HTML), per tal que la pàgina es visualitzi com la imatge que es troba a la carpeta material/sass19.png. Utilitza les següents variables:</p><hr><br><br><div class="lil">
+    <a class="lil-pump" href="sass18.html">VISUALIZAR</a>
+</div><br><br>
+
+</body>
+</html>

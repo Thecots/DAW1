@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+}
+body{
+background: rgb(173 216 230);
+
+}
+.div-box-5{
+    background: #fff;
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 1px solid rgb(62, 62, 255);
+    padding: 10px;
+    position: relative;
+}
+.img-5{
+    float: right;
+}
+.p-1-5{
+}
+.a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #0059ff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   .a:hover{
+       background-color: #2e97ff;
+   
+   }
+   .a:active{
+       background-color: #0065ca;
+   
+   }

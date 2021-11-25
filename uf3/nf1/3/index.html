@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The book house</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="screen scr1">
+        <div class="s_box">
+            <div class="close">
+               <a class="cerrara">X</a>
+            </div>
+            <div class="text">
+                <p>- Tenemos que ir al norte capitan</p>
+                <p>- Soldao replieguese</p>
+                <p>- Capitan si no vamos al norte moriremos</p>
+                <p>- Soldado callese o muera</p>
+            </div>
+        </div>
+    </div>
+    <div class="screen scr2">
+        <div class="s_box">
+            <div class="close">
+               <a class="cerrara">X</a>
+            </div>
+            <div class="text">
+                <p>- Hola Juan</p>
+                <p>- Hola Juanjo</p>
+                <p>- Como estas?</p>
+                <p>- muy bien</p>
+            </div>
+        </div>
+    </div>
+    <div class="screen scr3">
+        <div class="s_box">
+            <div class="close">
+               <a class="cerrara">X</a>
+            </div>
+            <div class="text">
+                <p>- Corre fran, la puerta se cerrará dentro de poco</p>
+                <p>- Erik creo que nos emos perdido</p>
+                <p>- Fran no me digas eso</p>
+                <p>- Creo que tendremos que pasar la noche aquí</p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt=""><h1>The book house</h1>
+        </div>
+        <div class="search">
+            <input placeholder="search" type="text"><img src="img/s.png" alt="">
+        </div>
+        <div class="perfil">
+
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <div class="slider">
+                <img src="img/Slider.jpg" alt="">
+                <span class="name"><h1>Sant Jordi day</h1><p>celebrate by reading</p></span>
+            </div>
+            <div class="slider1">
+                <div class="title">
+                    <h1>Best sellers</h1>
+                </div>
+                <div class="box-book">
+                   <a><img id="img1" src="img/1.jpg" alt=""></a>
+                   <a><img id="img2" src="img/3.jpg" alt=""></a>
+                   <a><img id="img3" src="img/4.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".cerrara").click(function(){
+            $(".scr1").css("display","none");
+            $(".scr2").css("display","none");
+            $(".scr3").css("display","none");
+
+        });
+
+        $("#img1").click(function(){
+            $(".scr1").css("display","flex");
+
+            var utterance = "Tenemos que ir al norte capitan";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='es-ES') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Soldao replieguese";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='it-IT') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Capitan si no vamos al norte moriremos";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='es-ES') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Soldado callese o muera";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='it-IT') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+        });
+
+        $("#img2").click(function(){
+            $(".scr2").css("display","flex");
+
+            var utterance = "Hola Juan";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+
+            if(voices[i].lang=='es-ES') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Hola Juanjo";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='de-DE') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "como estas?";
+                var speech = new SpeechSynthesisUtterance(utterance);
+                var voices = window.speechSynthesis.getVoices();
+                for (var i=0; i<voices.length; i++) {
+                if(voices[i].lang=='es-ES') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "muy bien";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='de-DE') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+        });
+       
+        
+        $("#img3").click(function(){
+            $(".scr3").css("display","flex");
+
+            var utterance = "Corre fran, la puerta se cerrará dentro de poco";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+
+            if(voices[i].lang=='es-ES') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Erik creo que nos emos perdido";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='de-DE') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Fran no me digas eso";
+                var speech = new SpeechSynthesisUtterance(utterance);
+                var voices = window.speechSynthesis.getVoices();
+                for (var i=0; i<voices.length; i++) {
+                if(voices[i].lang=='es-ES') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+                var utterance = "Creo que tendremos que pasar la noche aquí";
+            var speech = new SpeechSynthesisUtterance(utterance);
+            var voices = window.speechSynthesis.getVoices();
+            for (var i=0; i<voices.length; i++) {
+            if(voices[i].lang=='de-DE') {
+                console.log(i+" - "+voices[i].name+" "+voices[i].lang);
+                speech.voice = voices[i];
+                window.speechSynthesis.speak(speech);
+                break;
+                } 
+                }
+
+        });     
+    </script>
+</body>
+</html>

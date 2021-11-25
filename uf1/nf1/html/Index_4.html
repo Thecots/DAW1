@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html4</title>
+</head>
+<style>
+  .menu-img{
+  width: 2rem;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+.menu-img:hover{
+  width: 2.1rem;
+  color: white;
+  position: fixed;
+}
+</style>
+<body>
+  <div class="menu-atras">
+		<a href="index.html"><img class="menu-img" src="../img/atras.png" alt=""></a>
+	</div>
+    <h3>Información del producto</h2>
+<form>
+
+<fieldset style="width: 50px;">
+  <legend><strong>Datos básicos</strong></legend>
+
+  <label for="nombre">Nombre</label> <br>  
+  <input name="nombre" id="nombre" maxlength="250" type="text"><br><br>
+
+  <label for="descripcion">Descripción: </label> <br>  
+  <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea><br><br>
+
+  Foto <input name="foto" type="file"><br><br>  
+  <input name="contador" value="si" type="checkbox"> Añadir contador de visitas
+</fieldset>
+
+<br>
+<fieldset style="width: 343px;">
+  <legend><strong>Datos económicos</strong></legend>
+  
+  <label for="precio">Precio</label> 
+  <input size="5" id="precio" name="precio" type="text"> €
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="impuestos">Impuestos</label> 
+  <select name="impuestos">
+    <option value="4">4%</option>
+    <option value="7">7%</option>
+    <option value="16">16%</option>
+    <option value="25">25%</option>
+  </select>
+  
+  <br><br>
+  <label>Promoción</label> <br>
+  <input name="promocion" value="ninguno" checked="checked" type="radio"> Ninguno <br>
+
+  <input name="promocion" value="portes" type="radio"> Transporte gratuito <br>
+  <input name="promocion" value="descuento" type="radio"> Descuento 5%
+</fieldset> 
+</body>
+</html>

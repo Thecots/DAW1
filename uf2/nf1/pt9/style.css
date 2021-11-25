@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+}
+
+.uno{
+    text-align: center;
+}
+.uno video{
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+p{text-align: left;}
+
+.dos
+{
+text-align: center;
+margin: 20px;
+}
+
+.dos audio{
+    margin: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.267);
+    border-radius: 25px;
+    outline: none;
+}
+
+.tres{
+text-align: center;
+
+background-color: red;}
+
+button{
+    padding: 10px 20px;
+    border: 2px solid black;
+    outline: none;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+button:active{
+    background-color: rgba(0, 0, 0, 0.767);
+
+}
+
+.hola {
+    background: #bbffe7;
+    width: 570px;
+    padding: 80px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 5% auto;
+
+}
+.hola video {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 5px solid #ff6a6a;
+}

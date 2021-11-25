@@ -1,0 +1,93 @@
+.ej{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(219, 101, 101);
+    display: inline-flex;
+    margin: 20px;
+
+}
+.a{
+    border: 5px solid black;
+    border-radius: 50px 0px 50px 0px;
+    border-right: none;
+    border-left: 10px solid green;
+}
+.aa{
+    outline: solid black;
+}
+
+.ej p{
+    height: auto;
+    margin: 45% auto;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.pagination{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 735px;
+    box-shadow: 1px 15px 20px 0px rgba(129, 129, 129, 0.445);
+
+}
+.pagination a{
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 0.2mm solid rgba(0, 0, 0, 0);
+    width: 90px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 7px -1px grey;
+    transition: background-color 200ms;
+
+
+}
+
+.pagination .active{
+    background-color: #33e23f;
+    color: white;
+}
+
+.pagination a:hover{
+    background-color: rgba(172, 172, 172, 0.445);
+
+}
+
+.pagination-2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.pagination-2 a{
+    border-radius: 50%;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 0.2mm solid rgba(0, 0, 0, 0);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    line-height: 60px;
+    box-shadow: 0px 0px 7px -1px grey;
+    transition: background-color 200ms;
+    margin: 0 8px;
+
+}
+
+.pagination-2 .active{
+    background-color: #33e23f;
+    color: white;
+}
+
+.pagination-2 a:hover{
+    background-color: rgba(172, 172, 172, 0.445);
+
+}
+
+* {
+    cursor: url(happy.png), pointer ;
+ }

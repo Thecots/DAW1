@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.c1{
+
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    animation: circulo infinite linear 2s ;
+}
+
+@keyframes circulo{
+    0%{
+        border-radius: 50%;
+    }50%{
+        background-color: blue;
+        border-radius: 0%;
+    }100%{
+        border-radius: 100%;
+        background-color: red;
+    }
+}

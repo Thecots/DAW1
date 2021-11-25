@@ -1,0 +1,32 @@
+/*Contenedor principal*/
+/*Figura (imatges)*/
+.container nav {
+  background-color: #9b6f91;
+  width: 80%;
+}
+.container nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+.container nav ul li {
+  margin: 5px 10px 5px 30px;
+}
+.container nav ul .active {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.container .card {
+  padding: 40px;
+  background-color: red;
+  border: 5px solid #333333;
+  border-radius: 40px;
+}
+.container .card img {
+  width: 20%;
+  border-radius: 8rem;
+}
+.container .card figcaption {
+  width: 100px;
+}
+
+/*# sourceMappingURL=style-19.css.map */

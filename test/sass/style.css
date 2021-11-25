@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f5f6;
+  font-size: 14px;
+  color: #666666;
+}
+
+.button {
+  position: relative;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #888888;
+  outline: none;
+  background-color: #f4f5f6;
+  border-radius: 40px;
+  -webkit-box-shadow: -6px -20px 35px #ffffff, -6px -10px 15px #ffffff, -20px 0px 30px #ffffff, 6px 20px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: -6px -20px 35px #ffffff, -6px -10px 15px #ffffff, -20px 0px 30px #ffffff, 6px 20px 25px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .13s ease-in-out;
+  transition: .13s ease-in-out;
+  cursor: pointer;
+}
+
+.button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button:active .button__content {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button:active .button__content .button__text, .button:active .button__content .button__icon {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+}
+
+.button__content {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-shadow: inset 0px -8px 0px #dddddd, 0px -8px 0px #f4f5f6;
+          box-shadow: inset 0px -8px 0px #dddddd, 0px -8px 0px #f4f5f6;
+  border-radius: 40px;
+  -webkit-transition: .13s ease-in-out;
+  transition: .13s ease-in-out;
+  z-index: 1;
+}
+
+.button__icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate3d(0px, -4px, 0px);
+          transform: translate3d(0px, -4px, 0px);
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-flex-item-align: start;
+      align-self: start;
+  justify-self: end;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: .13s ease-in-out;
+  transition: .13s ease-in-out;
+}
+
+.button__icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #aaaaaa;
+}
+
+.button__text {
+  position: relative;
+  -webkit-transform: translate3d(0px, -4px, 0px);
+          transform: translate3d(0px, -4px, 0px);
+  margin: 0;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: center;
+  font-size: 32px;
+  background-color: #888888;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: .13s ease-in-out;
+  transition: .13s ease-in-out;
+}
+
+.credits {
+  margin-top: 24px;
+}
+
+.credits__reference {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: #0099ff;
+  text-decoration: none;
+  -webkit-transition: ease-in .13s;
+  transition: ease-in .13s;
+}
+
+.credits__reference:hover {
+  border-bottom-color: #0099ff;
+}
+/*# sourceMappingURL=style.css.map */

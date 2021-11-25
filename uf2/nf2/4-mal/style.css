@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Fira sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.preload{
+    width: 100%;
+    height: 100vh;
+    background: rgb(133,38,215);
+    background: linear-gradient(180deg, rgba(133,38,215,1) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;    
+}
+
+.preload-c{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 5px solid rgb(241, 241, 241);
+    border-bottom: 5px solid royalblue;
+    animation: a linear 0.7s infinite;
+    transform: rotate(360deg);
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.363);
+}
+
+
+@keyframes a{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+body{
+    background-color: royalblue;
+}
+/* form */
+
+form{
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+    padding: 35px 70px;
+    background: white;
+}
+
+.box{
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.content h1{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.content-1{
+
+    height: 290px;
+
+}
+
+.flecha{
+    width: 40px;
+    height: 40px;
+}
+.f{
+    display: flex;
+    flex-direction: column;
+}
+.f input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    outline: none;
+}
+
+.g{
+    display: flex;
+    flex-direction: column;
+}
+
+.chbox input{
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.content-1 textarea{
+    width: 100%;
+    resize: none;
+    height: 270px;
+    outline: none;
+    padding: 10px;
+}
+ 
+.chbox{
+
+    font-size: 20px;
+}
+
+.chbox{
+    margin: 10px 0;
+    padding: 0px 0;
+}
+
+.botones{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    user-select: none;
+    bottom: 0;
+    
+}
+
+.botones a img{
+    width: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+
+}
+
+.botones a img:hover{
+    background-color: rgba(219, 219, 219, 0.616);
+}
+
+.botones a:first-child img{
+    transform: rotate(270deg);
+}
+
+.botones a:last-child img{
+    transform: rotate(90deg);
+}
+
+.chb{
+    display: flex;
+    flex-direction: row;
+}

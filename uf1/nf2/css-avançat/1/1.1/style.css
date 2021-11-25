@@ -1,0 +1,20 @@
+.a p > span { color: blue; }
+
+.aa p a { color: red; }
+.aa p > a { color: red; }
+
+.aaa h2 { color: green; }
+.aaa h1 + h2 { color: red }
+
+.b p + p { text-indent: 1.5em; }
+
+a[class] { color: blue; }
+a[class="externo"] { color: rgb(0, 255, 13); }
+a[href="http://www.ejemplo.com"] { color: rgb(255, 0, 221); }
+a[class~="externo"] { color: rgb(125, 160, 28); }
+
+*[lang|="es"] { color : red }
+
+p.aviso{
+    color: red;
+}

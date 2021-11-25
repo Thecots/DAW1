@@ -1,0 +1,39 @@
+
+*{
+    font-family: sans-serif;
+}
+
+#c1{
+    width: 300px;
+    background: orange;
+}
+#c2{
+    width: 300px;
+    background: red;
+    border: 10px red solid;
+    padding: 50px;
+}
+#c3{
+    width: 420px;
+    background-color: rgb(166, 190, 255);
+}
+a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #0059ff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   a:hover{
+       background-color: #2e97ff;
+   
+   }
+   a:active{
+       background-color: #0065ca;
+   
+   }

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="preload" id="onload">
+            <div class="preload-c"></div>
+        </div>
+        <form id="formulario">
+            <div class="content">
+                <h1>Forumlario jquery</h1>
+                <div class="box step">
+                    <div class="content-1 f">
+                        <input type="text" id="nombre"  placeholder="Nombre">
+                        <input type="text" id="apellido"  placeholder="Apellido">
+                        <input type="text" id="direccion"  placeholder="Dirección">
+                        <input type="text" id="telefono"  placeholder="Teléfono">
+                        <p id='jj'></p>
+
+                    </div>
+                    <div class="botones">
+                        <div class="flecha"></div>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">1/4</p>
+                        <a href="#" id="next"><img src="flecha.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box step hiddenStep">
+                    <div class="content-1 g">
+                        <div class="chbox">
+                            <input type="checkbox" id="w1" name="w1" value="WIMAX 10"><label for="w1">WIMAX 10</label>
+                        </div>
+                        <div class="chbox">
+                            <input type="checkbox" id="w2" name="w2" value="WIMAX 20"><label for="w2">WIMAX 20</label>
+                        </div>
+                        <div class="chbox">
+                            <input type="checkbox" id="w3" name="w3" value="WIMAX 30"><label for="w3">WIMAX 30</label>
+                        </div>
+                        <div class="chbox">
+                            <input type="checkbox" id="w4" name="w4" value="WIMAX 60"><label for="w4">WIMAX 60</label>
+                        </div>
+
+                       <div class="chbox">
+                            <input type="radio" id="ipd" name="ip" value="Fija"><label for="ipd">IP Dinamica</label>
+                       </div>
+                       <div class="chbox">
+                            <input type="radio" id="ipf" name="ip" value="Dinamica"><label for="ipf">IP Fija</label>
+                        </div>
+                     <div class="chbox">
+                           
+                       </div>
+                    </div>
+                    <div class="botones">
+                        <a href="#" id="back"><img src="flecha.png" alt=""></a>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">2/4</p>
+                        <a href="#" id="next"><img src="flecha.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box step hiddenStep">
+                    <div class="content-1">
+                        <textarea placeholder="Comentario" id="Comentario"></textarea>
+                    </div>
+                    <div class="botones">
+                        <a href="#" id="back"><img src="flecha.png" alt=""></a>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">3/4</p>
+                        <a href="#" id="next" onclick="guardar()"><img src="flecha.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box step hiddenStep">
+                    <div class="content-1 ult">
+                        <div class="ul">
+                            <a>Nombre: </a><span id="s-nom"></span>.
+                        </div>
+                        <div class="ul">
+                            <a>Apellido: </a><span id="s-apellido"></span>.
+                        </div>
+                        <div class="ul">
+                            <a>Dirección: </a><span id="s-direccion"></span>.
+                        </div>
+                        <div class="ul">
+                            <a>Teléfono: </a><span id="s-telefono"></span>.
+                        </div>
+                        <div class="ul">
+                            <a>Wimax: </a><span id="s-w1"></span> <span id="s-w2"></span> <span id="s-w3"></span> <span id="s-w4"></span>.
+                        </div>
+                        <div class="ul">
+                            <a>IP: </a><span id="s-ip"></span>.
+                        </div>
+                        <div class="ul">
+                            <a>Comentario: </a><textarea readonly  id="s-Comentario" cols="30" rows="10"></textarea>
+                        </div>
+
+
+                    </div>
+                    <div class="botones">
+                        <a href="#" id="back"><img src="flecha.png" alt=""></a>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">4/4</p>
+                        <div class="flecha"></div>
+                    </div>
+                    <a class="btn-enviar" onclick="save()">Enviar</a>
+                </div>
+            </div>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+        $(document).ready(function(){
+
+            $('.hiddenStep').css('display','none');
+
+            $('a#next').click(function(event){
+                event.preventDefault();
+                var parent = $(this).closest('.step');
+                console.log (parent);
+                var mainContent = $('.content>.step');
+                var index = mainContent.index(parent)+1;
+                console.log (index);
+    
+                parent.css('display','none');
+                mainContent.eq(index).css('display','block');
+            })
+
+            $('a#back').click(function(event){
+                event.preventDefault();
+                var parent = $(this).closest('.step');
+                console.log (parent);
+                var mainContent = $('.content>.step');
+                var index = mainContent.index(parent)-1;
+                console.log (index);
+    
+                parent.css('display','none');
+                mainContent.eq(index).css('display','block');
+            })
+        });
+        
+        $(function () {
+            $('#nombre').keyup(function () {
+                $('#s-nom').text($(this).val());
+            });
+            $('#apellido').keyup(function () {
+                $('#s-apellido').text($(this).val());
+            });
+            $('#direccion').keyup(function () {
+                $('#s-direccion').text($(this).val());
+            });
+            $('#telefono').keyup(function () {
+                $('#s-telefono').text($(this).val());
+            });
+            $('#Comentario').keyup(function () {
+                $('#s-Comentario').text($(this).val());
+            });
+            $('#w1').click(function () {
+                if('input:checkbox[name=w1]:checked') {
+                    $('#s-w1').text($('input[name=w1]:checked', '#formulario').val());
+                }
+            });
+            $('#w2').click(function () {
+                if('input:checkbox[name=w2]:checked') {
+                    $('#s-w2').text($('input[name=w2]:checked', '#formulario').val());
+                }
+            });
+            $('#w3').click(function () {
+                if('input:checkbox[name=w3]:checked') {
+                    $('#s-w3').text($('input[name=w3]:checked', '#formulario').val());
+                }
+            }); $('#w4').click(function () {
+                if('input:checkbox[name=w4]:checked') {
+                    $('#s-w4').text($('input[name=w4]:checked', '#formulario').val());
+                }
+            });
+            $('#ipf').click(function () {
+                if('input:radio[id=ipf]:checked') {
+                    $('#s-ip').text($('input[id=ipf]:checked', '#formulario').val());
+                }
+            });
+            $('#ipd').click(function () {
+                if('input:radio[id=ipd]:checked') {
+                    $('#s-ip').text($('input[id=ipd]:checked', '#formulario').val());
+                }
+            });
+        });        
+
+        function save(){
+            swal({
+                title: "Good job!",
+                text: "Dades enviades correctament!",
+                icon: "success",
+                button: "siguiente",
+            });
+        }
+
+
+    window.onload = function(){
+        $('#onload').delay().fadeOut();  
+    }   
+    </script>
+    </body>
+    </html>
+</body>
+</html>

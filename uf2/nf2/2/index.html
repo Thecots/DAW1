@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Srcots</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/monke-logo.png">
+    <script src="js/fabric.js"></script>
+
+</head>
+<body>
+    <header>
+       <a class="h_l" href="#">
+            <div class="logo">
+                <div class="img">
+                    <img src="img/monke-logo.png" alt="">
+
+                </div>
+                <div class="brand">
+                    <h1>Srcots</h1>
+                </div>
+            </div>
+       </a>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Horario</a></li>
+                <li><a class="active" href="#">Mesas</a></li>
+                <li><a href="#">Carta</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="c__box">
+        <h1>EDITOR</h1>
+        <canvas id="canvas" width="1000" height="550">
+        </canvas>
+        <div class="menu-btn">
+            <button onclick="mesa()">Añadir mesa</button>
+            <button onclick="silla()">Añadir silla</button>
+            <button onclick="borrar()">Borrar</button>
+        </div>
+       <div class="text-info">
+        <p>*Tambíen se puede borrar selecionando el objeto y pulsando <b>BackSpace</b> (la primera vez se tiene que pulsar dos veces).</p>
+        <p>*Para salit del menu 'Añadir mesa' pulsa <b>ESC</b> (la primera vez se tiene que pulsar dos veces).</p>
+        <p>*Recomendación: Primero añadir todas las sillas y luego la mesa, para que las sillas queden por debajo de la mesa</p>
+       </div>
+
+    </div>
+    <div class="a-mesa" id="a-mesa">
+        <div class="title-m">
+            <h1>Mesas</h1>
+        </div>
+        <div class="select-m">
+            <div onclick="redonda()" class="tipo-m">
+                <div class="m-img">
+                    <img src="img/redonda.png" alt="">
+                </div>
+                <div class="m-name">
+                    <p>Redonda</p>
+                </div>
+            </div>
+            <div onclick="cuadrada()" class="tipo-m">
+                <div class="m-img">
+                    <img src="img/cuadrada.png" alt="">
+                </div>
+                <div class="m-name">
+                    <p>Cuadrada</p>
+                </div>
+            </div>
+            <div onclick="rectangular()" class="tipo-m">
+                <div class="m-img">
+                    <img class="r-img" src="img/rectangular.svg" alt="">
+                </div>
+                <div class="m-name">
+                    <p>Rectangular</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img-final">
+        <h1>EJEMPLO</h1>
+        <img src="img/final.png" alt="">
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

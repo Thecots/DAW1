@@ -1,0 +1,165 @@
+/* 1 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: blue;
+}
+.nom_estil{
+    font-size: 20px;
+    color: orange;
+}
+
+#id{
+    font-size: 40px;
+
+}
+h4,h5,h6{
+    color: rgb(175, 175, 175);
+}
+
+p a{
+    color: black;
+}
+
+p a#aviso{
+    color: maroon;
+}
+p#aviso{
+    color: red;
+    font-size: 40px;
+}
+/* 2 */
+p#red{
+    color: red;
+}
+
+p#blue{
+    color: blue ;
+}
+p#orange{
+    color: orange;
+}
+/* 3 */
+.plata{
+    color: orange;
+    font-size: 30px;
+}
+/* 4 */
+.f-color{
+    width: 90px;
+    height: 10px;
+    background: rgb(0, 247, 255);
+    
+}
+
+.c-red{
+    width: 90px;
+    height: 10px;
+    background: rgb(255, 0, 0);
+    
+}
+
+.gran{
+    font-size: 60px;
+    color: black;
+
+}
+.petit{
+    font-size: 10px;
+    color: black;
+}
+/* 5 */
+#pr{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-5{
+    color: #555; 
+}
+
+.a-5{
+    color: #CC3300;
+}
+#primero{
+    background: #FFFFCC;
+    padding: 1em;
+}
+
+.especial{
+    background: #FFCC99;
+    border: 1px solid #FF9900;
+    padding: .1em;
+}
+span{
+    font-weight: bold; 
+}
+
+#titulo{
+    color: rgb(84, 187, 130);
+    
+}
+
+strong{
+    color: red;
+}
+
+span.destacado{
+    color: rgb(255, 230, 0);
+}
+h2#subtitulo{
+    color: blue;
+}
+
+.a-6-1{
+    color: red;
+}
+
+em{
+    color: blue;
+}
+
+span.especial-6{
+    background-color: none;
+    color: purple;
+}
+
+#adicional{
+    color: rgb(125, 133, 22);
+}
+
+span#especiala-6{
+    color: pink;
+}
+.a-6-2{
+    color: green;
+}
+
+.margen-6{
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.btn-a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #007eff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   .btn-a:hover{
+       background-color: #2e97ff;
+   
+   }
+   .btn-a:active{
+       background-color: #0065ca;
+   
+   }

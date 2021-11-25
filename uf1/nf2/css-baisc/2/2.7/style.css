@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+
+}
+body{
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+hr{
+    width: 300px;
+    margin: 0;
+    background-color: black;
+    height: 1px;
+    border: none;
+}
+.menys{
+    font-size: 0.75em;
+}
+
+.mes{
+    font-size: 1.25em;
+}
+
+.un{
+    font-size: 10pt;
+}
+.dos{
+    font-size: 3.5mm;
+}
+.tres{
+    font-size: 0.35cm;
+}
+
+.quatre{
+    font-size: 12pt;
+}
+
+.cinc{
+    font-size: 1pc;
+}
+.sis{
+    font-size: 4.23mm;
+}
+
+.set{
+    font-size: 1in;
+}
+.vuit{
+    font-size: 2.54cm ;
+}
+
+a{
+
+ text-decoration: none;
+ color: white;
+ background-color: #007eff;
+ padding: 7px 50px ;
+ border-radius: 1px;
+ position: absolute;
+ right: 0px;
+ top: 0;
+ margin: 30px 30px;
+}
+a:hover{
+    background-color: #2e97ff;
+
+}
+a:active{
+    background-color: #0065ca;
+
+}

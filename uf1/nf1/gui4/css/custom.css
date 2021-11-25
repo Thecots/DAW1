@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+.fondo{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,134,138,1) 0%, rgba(0,134,138,1) 50%, rgba(255,255,255,1) 50%);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+.box-google{
+    position: relative;
+    width: 750px;
+    height: auto;
+    background-color: #fff;
+    margin: 5% auto;
+    box-shadow: 0 0 45px 0;
+    padding: 35px;
+    margin-bottom: 5%;
+}
+hr{
+    width: 300px;
+    margin: auto;
+}
+.box-google p{
+    text-align: center;
+    font-size: 25px;
+    margin: 3% 0px;
+}
+
+
+.box-google .p0{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+.separador{
+    position: absolute;
+    width: 900px;
+    height: 1px;
+    background: #000;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.p1{
+    font-family: 'Roboto';
+}
+.p2{
+    font-family: 'Goldman';
+}
+.p3{
+    font-family: 'Raleway';
+}
+.p4{
+    font-family: 'Big Shoulders Stencil Display';
+}
+.p5{
+    font-family: 'Syne Mono';
+}
+.p6{
+    font-family: 'Dancing Script';
+}
+.p7{
+    font-family: 'Syne Tactile';
+}
+.p8{
+    font-family: 'Pacifico';
+}
+.p9{
+    font-family: 'Abril Fatface';
+}
+.p10
+{
+    font-family: 'Amatic SC';
+}
+
+.box-google p{
+    text-align: center;
+    font-size: 25px;
+    margin: 3% 0px;
+}
+
+@font-face{
+    font-family: '1';
+    src: url(../fonts/aAttackGraffiti.ttf);
+}
+@font-face{
+    font-family: '2';
+    src: url(../fonts/Blazed.ttf);
+}
+
+@font-face{
+    font-family: '3';
+    src: url(../fonts/Cute\ Notes.ttf);
+}
+
+@font-face{
+    font-family: '4';
+    src: url(../fonts/DIOGENES.ttf);
+}
+
+@font-face{
+    font-family: '5';
+    src: url(../fonts/go\ around\ the\ books.ttf);
+}
+
+@font-face{
+    font-family: '6';
+    src: url(../fonts/ka1.ttf);
+}
+
+@font-face{
+    font-family: '7';
+    src: url(../fonts/SAIKYO.ttf);
+}
+
+@font-face{
+    font-family: '8';
+    src: url(../fonts/SingleGhost\ regular.ttf);
+}
+
+@font-face{
+    font-family: '9';
+    src: url(../fonts/Stranger\ back\ in\ the\ Night.ttf);
+}
+
+@font-face{
+    font-family: '10';
+    src: url(../fonts/WRESTLEMANIA.ttf);
+}
+.o1{
+    font-family: '1';
+}
+.o2{
+    font-family: '2';
+}
+.o3{
+    font-family: '3';
+}
+.o4{
+    font-family: '4';
+}
+.o5{
+    font-family: '5';
+}
+.o6{
+    font-family: '6';
+}
+.o7{
+    font-family: '7';
+}
+.o8{
+    font-family: '8';
+}
+.o9{
+    font-family: '9';
+}
+.o10{
+    font-family: '10';
+    font-size: 55px;
+
+}

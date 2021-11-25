@@ -1,0 +1,263 @@
+.c-5 {
+  color: red;
+}
+
+.sweet {
+  background-color: #5d5df0;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-top: 0;
+  color: white;
+  padding: 10px;
+  width: 500px;
+}
+
+.a {
+  color: red;
+}
+
+.qq {
+  background-color: rgba(202, 202, 202, 0.301);
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(202, 202, 202, 0.616);
+}
+
+#ww {
+  width: 700px;
+  height: 550px;
+  background: #fff;
+  margin: 0px auto;
+}
+
+.dd {
+  width: auto;
+  height: 20px;
+  background-color: #aabbaa;
+}
+
+#ff {
+  width: 180px;
+  height: 462px;
+  background: #fff;
+  float: left;
+  padding: 50px 0px 0px 10px;
+}
+
+.gg {
+  clear: both;
+  background-color: #aabbaa;
+}
+
+#ff a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  border: 0px;
+  border-bottom: 1px solid red;
+  border-style: dotted;
+}
+
+.ii {
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+
+.rr {
+  margin: 0px 0 0 0;
+}
+
+.vv {
+  width: 510px;
+  height: 512px;
+  background: red;
+  float: left;
+}
+
+.bb {
+  width: 380px;
+  height: 512px;
+  background-color: #fff;
+  float: left;
+}
+
+.xx {
+  width: 130px;
+  height: 512px;
+  background-color: #fff;
+  float: left;
+}
+
+.zz {
+  width: 110px;
+  height: 100px;
+  padding: 15px 5px 0px 5px;
+  margin: 50% auto;
+  background: #4eb6c3;
+  color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  border: 0px;
+  border-bottom: 15px solid rgba(0, 104, 104, 0.548);
+  box-sizing: content-box;
+}
+
+.btn-falso {
+  font-size: 20px;
+  background-color: #6363d6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-f {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #42f7e8;
+  text-decoration: none;
+}
+
+.btn-normal, .btn-acceptar, .btn-canelar {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+  transition: all ease-in-out 0.4s;
+}
+
+.btn-canelar {
+  background-color: #ff6c6c;
+  color: white;
+}
+
+.btn-acceptar {
+  background-color: #68ff68;
+  color: white;
+}
+
+.btn-normal:hover, .btn-canelar:hover, .btn-acceptar:hover {
+  background-color: rgba(128, 128, 128, 0.438);
+}
+
+.btn-canelar:hover {
+  background-color: #c45252;
+}
+
+.btn-acceptar:hover {
+  background-color: #52ac52;
+}
+
+.btn-normal:active, .btn-canelar:active, .btn-acceptar:active {
+  background-color: rgba(88, 86, 86, 0.575);
+  color: white;
+}
+
+.btn-canelar:active {
+  background-color: #8a3a3a;
+}
+
+.btn-acceptar:active {
+  background-color: #336d33;
+}
+
+.dilluns {
+  color: red;
+  font-weight: bold;
+}
+
+.dimarts {
+  color: blue;
+  font-weight: bold;
+}
+
+.dimecres {
+  color: yellow;
+  font-weight: bold;
+}
+
+.dijous {
+  color: green;
+  font-weight: bold;
+}
+
+.divendres {
+  color: purple;
+  font-weight: bold;
+}
+
+.dissabte {
+  color: orange;
+  font-weight: bold;
+}
+
+.diumenge {
+  color: pink;
+  font-weight: bold;
+}
+
+.c-1 {
+  width: 25%;
+}
+
+.c-2 {
+  width: 50%;
+}
+
+.c-3 {
+  width: 75%;
+}
+
+.c-4 {
+  width: 100%;
+}
+
+.nav {
+  color: silver;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.nav:hover {
+  border-color: skyblue;
+  border-radius: 3px;
+}
+.nav .dropdown {
+  max-height: 60px;
+  max-width: 30px;
+  position: absolute;
+}
+
+.nav .link div,
+.nav .btn div {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 12px;
+}
+
+.message {
+  color: #911111;
+  font-family: "Roboto", sans-serif;
+}
+.message:hover {
+  background: compliment(#911111);
+}
+.message .message-item {
+  padding: 10px;
+  margin: 2px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

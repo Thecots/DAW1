@@ -1,0 +1,304 @@
+$red: red;
+
+.c-5{
+    color: $red;
+}
+
+.sweet {
+    background: {
+        color: rgb(93, 93, 240);
+        position: center;
+        size: contain;
+    }
+
+    margin: {
+        bottom: 1rem;
+        left: 0;
+        top: 0;
+    }
+
+    color: white;
+    padding: 10px;
+    width: 500px;
+}
+
+.a{
+    color: red;
+
+}
+
+// ------ 7 ------ //
+
+$blanco: #fff;
+$rojo: rgb(255, 0, 0);
+$negro: #000;
+$l: left;
+$s: solid;
+$a: auto;
+
+.qq{
+    background-color: rgba(202, 202, 202, 0.301);
+    width: 800px;
+    height: 600px;
+    margin: 0 $a;
+    padding-top: 10px;
+    
+    box: {
+        sizing: border-box;
+        shadow:0 0 20px rgba(202, 202, 202, 0.616);
+    }
+}
+
+
+#ww{
+    width: 700px;
+    height: 550px;
+    background: $blanco;
+    margin: 0px $a;
+}
+.dd{
+    width: $a;
+    height: 20px;
+    background-color: rgb(170 187 170);
+}
+#ff{
+    width: 180px;
+    height: 462px;
+    background: $blanco;
+    float: $l;
+    padding: 50px 0px 0px 10px;
+}
+
+.gg{
+    clear: both;
+    background-color:rgb(170 187 170);
+}
+
+#ff a{
+    text-decoration: none;
+    color: $negro;
+    font-size: 25px;
+    border: 0px;
+    
+    border-bottom: 1px $s $rojo;
+    border-style: dotted;
+    
+}
+
+
+.ii{
+    float: $l;
+    margin: 0px 10px 10px 0px;
+}
+.rr{
+    margin: 0px 0 0 0;
+}
+
+
+.vv{
+    width: 510px;
+    height: 512px;
+    background: $rojo;
+    float: $l;
+}
+
+.bb{
+    width: 380px;
+    height: 512px;
+    background-color: $blanco;
+    float: $l;
+}
+
+.xx{
+    width: 130px;
+    height: 512px;
+
+    background-color: $blanco;
+    float: $l;
+
+}
+.zz{
+    width: 110px;
+    height: 100px;
+    padding: 15px 5px 0px 5px;
+    margin: 50% $a;
+    background: rgb(78 182 195);
+    color: $blanco;
+    border-radius: 15px;
+    text-align: center;
+    border: 0px;
+    border-bottom: 15px $s rgba(0, 104, 104, 0.548);
+    box-sizing: content-box;
+}
+
+// ---- 8 ----- //
+
+@mixin name {
+    background-color: rgb(99, 99, 214);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ .btn-falso{
+     font-size: 20px;
+     @include name;
+    text-decoration: none;
+    }
+// +variable
+
+
+@mixin f($color){
+    $px: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: $color;
+ }
+
+ .btn-f{
+     font-size: 20px;
+     @include f(rgb(66, 247, 232));
+    text-decoration: none;
+    
+}
+// ----- 10 -------//
+.btn-normal {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+    transition: all ease-in-out .4s;
+  }
+  
+
+  .btn-canelar  {
+    @extend .btn-normal;
+    background-color: rgb(255, 108, 108);
+    color: white;
+
+  }
+  
+  .btn-acceptar  {
+    @extend .btn-normal;
+    background-color: rgb(104, 255, 104);
+    color: white;
+
+  }
+
+.btn-normal:hover{
+    background-color: rgba(128, 128, 128, 0.438);
+
+}
+.btn-canelar:hover{
+    background-color: rgb(196, 82, 82);
+}
+
+.btn-acceptar:hover{
+    background-color: rgb(82, 172, 82);
+
+}
+
+.btn-normal:active{
+    background-color: rgba(88, 86, 86, 0.575);
+    color: white;
+
+}
+.btn-canelar:active{
+    background-color: rgb(138, 58, 58);
+}
+
+.btn-acceptar:active{
+    background-color: rgb(51, 109, 51);
+
+}
+
+//  ----- 11 ----- // 
+
+$dias: (
+    dilluns: red,
+    dimarts: blue,
+    dimecres: yellow,
+    dijous: green,
+    divendres: purple,
+    dissabte: orange,
+    diumenge: pink
+);
+
+@each $dia, $color in $dias {
+   .#{$dia} {
+      color: $color;
+      font-weight: bold;
+   }
+}
+
+// ----- 12 ----- // 
+
+$W: 0;
+@for $i from 1 through 4 {
+    .c-#{$i} {
+      width:($W+25%);
+    }
+    $W: $W + 25;
+  }
+
+//    ----- 16 ------ // 
+
+.nav { // ponemos el :hover y el (.nav .dropdown) dentro del .nav
+	color: silver;
+    font: { // propietats aniuades
+        family: Verdana, sans-serif ;
+        size: 12px ;
+        weight: 500 ;
+    }
+    
+	&:hover {
+        border: { // propietats aniuades
+            color: skyblue ;
+            radius: 3px ;
+        }
+
+    }
+	.dropdown{ 
+        max: { // propietats aniuades
+            height: 60px ;
+            width: 30px ;
+        }
+        position: absolute;
+    } 
+}
+.nav .link div,
+   .nav .btn div {
+	display: inline-block ;
+	position: relative ;
+	text: { // propietats aniuades
+        align: center ;
+	    decoration: none ;
+        indent: 12px ;
+    }
+}
+
+
+// ---- 17 ----- //
+
+$dark-red: #911111;
+$Roboto-font: 'Roboto', sans-serif;
+$font-size__small: .9rem;
+.message {
+  color: $dark-red;
+  font-family: $Roboto-font; 
+  &:hover {
+    background: compliment($dark-red);
+  }
+  & .message-item {
+    padding: 10px; 
+    margin: 2px;
+    font: {
+        size: $font-size__small; 
+        weight: bold;
+        family: sans-serif;
+    }
+  }
+}
+ 

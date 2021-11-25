@@ -1,0 +1,135 @@
+
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(201 217 255);
+    
+}
+.c0{
+    width: 75vw;
+    height: 75vh;
+    margin: 0 auto;
+}
+#c1, #c3{
+    height: 2vh;
+    width: 76vw;
+    border: 0.5vh solid grey;
+
+    background: rgb(217 78 124);
+}
+
+#c1 p, #c3 p {
+    padding: 0.4vh 0vh 0vh 0vh;
+    margin: -0.2vh 8vh -0.5vh 5.4vh;
+    font-size: 1.5vh;
+}
+
+#c2{
+    padding-top: 3vh;
+    padding-left: 2.5vh;
+    height: 90vh;
+    background: rgb(223 223 255);
+    width: 75vw;
+    
+}
+
+.bordes{
+    font-size: 1.5vh;
+    margin: 0px 0px 0.5vh 0px;
+    padding: 1.5vh 2vh;
+    width: 7vh;
+    background-color: grey;
+    border: 0.5vh solid;
+}
+.t1{
+    border: 0.5vh solid rgb(255, 65, 182);
+    width: 98%;
+    font-size: 1.5vh;
+}
+
+.t2{
+    border-top-color: red;
+    border-bottom-color: greenyellow;
+    border-right-color: blue;
+    border-left-color: grey;
+    width: 98%;
+    font-size: 1.5vh;
+
+}
+
+.t3{
+    border-bottom: 0.5vh solid red;
+    width: 98%;
+    font-size: 1.5vh;
+
+}
+
+.c1{
+    width: 35vh;
+    height: 40vh;
+    margin-left: 5vh;
+    padding: 0.5vh;
+    border: 0.5vh solid rgb(241, 16, 174);
+}
+
+.b1{
+    border: dotted;
+}
+.b2{
+    border: dashed;
+}
+.b3{
+    border: solid;
+}
+.b4{
+    border: double;
+}
+.b5{
+    border: groove;
+}
+.b6{
+    border: ridge;
+}
+.b7{
+    border: inset;
+}
+.b8{
+    border: outset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #0059ff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   a:hover{
+       background-color: #2e97ff;
+   
+   }
+   a:active{
+       background-color: #0065ca;
+   
+   }

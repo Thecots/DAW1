@@ -1,0 +1,10 @@
+.a::after{
+    content: " - " url(home.png);
+}
+.a{
+    color: red;
+}
+
+.aaa::before{
+    content: " - " url(home.png);
+}

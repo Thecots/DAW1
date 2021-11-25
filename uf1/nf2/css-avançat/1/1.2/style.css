@@ -1,0 +1,45 @@
+hr{
+    text-align: center;
+    width: 750px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.div1{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    margin-bottom: 20px;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.wrapper {
+    margin-top: 20px;
+    height: 250px;
+    background: grey;
+}
+
+.div3 {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+
+.dummy {
+    margin: 0;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid;
+    background: grey;
+}
+.empty {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

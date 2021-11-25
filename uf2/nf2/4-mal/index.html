@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="preload" id="onload">
+            <div class="preload-c"></div>
+        </div>
+        <form>
+            <div class="content">
+                <h1>Forumlario jquery</h1>
+                <div class="box step">
+                    <div class="content-1 f">
+                        <input type="text" id="na" placeholder="Nombre">
+                        <input type="text" placeholder="Apellido">
+                        <input type="text" placeholder="Dirección">
+                        <input type="text" placeholder="Telefono">
+                        <p id='jj'></p>
+
+                    </div>
+                    <div class="botones">
+                        <div class="flecha"></div>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">1/4</p>
+                        <a href="#" id="next"><img src="flecha.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box step hiddenStep">
+                    <div class="content-1 g">
+                        <div class="chbox">
+                            <input type="checkbox" id="w1" name="w1"><label for="w1">WIMAX 10</label>
+                        </div>
+                        <div class="chbox">
+                            <input type="checkbox" id="w2" name="w2"><label for="w2">WIMAX 20</label>
+                        </div>
+                        <div class="chbox">
+                            <input type="checkbox" id="w3" name="w3"><label for="w3">WIMAX 30</label>
+                        </div>
+                        <div class="chbox">
+                            <input type="checkbox" id="w4" name="w4"><label for="w4">WIMAX 60</label>
+                        </div>
+
+                       <div class="chbox">
+                            <input type="radio" id="ipd" name="ipd"><label for="ipd">IP Dinamica</label>
+                       </div>
+                       <div class="chbox">
+                            <input type="radio" id="ipf" name="ipf"><label for="ipf">IP Fija</label>
+                        </div>
+                     <div class="chbox">
+                           
+                       </div>
+                    </div>
+                    <div class="botones">
+                        <a href="#" id="back"><img src="flecha.png" alt=""></a>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">2/4</p>
+                        <a href="#" id="next"><img src="flecha.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box step hiddenStep">
+                    <div class="content-1">
+                        <textarea placeholder="Comentarios" name="" id="" cols="30" rows="10">
+                            
+                        </textarea>
+                    </div>
+                    <div class="botones">
+                        <a href="#" id="back"><img src="flecha.png" alt=""></a>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">3/4</p>
+                        <a href="#" id="next" onclick="guardar()"><img src="flecha.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box step hiddenStep">
+                    <div class="content-1">
+                        <a>Nombre</a><a #name></a>
+                    </div>
+                    <div class="botones">
+                        <a href="#" id="back"><img src="flecha.png" alt=""></a>
+                        <p style="font-family: sans-serif; margin: 0 10px; font-size: 20px;">4/4</p>
+                        <div class="flecha"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+
+        $(document).ready(function(){
+            $('.hiddenStep').css('display','none');
+            $('a#next').click(function(event){
+                event.preventDefault();
+                var parent = $(this).closest('.step');
+                console.log (parent);
+                var mainContent = $('.content>.step');
+                var index = mainContent.index(parent)+1;
+                console.log (index);
+    
+                parent.css('display','none');
+                mainContent.eq(index).css('display','block');
+            })
+            $('a#back').click(function(event){
+                event.preventDefault();
+                var parent = $(this).closest('.step');
+                console.log (parent);
+                var mainContent = $('.content>.step');
+                var index = mainContent.index(parent)-1;
+                console.log (index);
+    
+                parent.css('display','none');
+                mainContent.eq(index).css('display','block');
+            })
+        })
+        
+        function guardar(){
+        var na;
+        
+        }
+
+        $('#name').text('hola xd');
+        
+    window.onload = function(){
+        $('#onload').delay(100).fadeOut();  
+    }   
+        
+
+
+    </script>
+    </body>
+    </html>
+</body>
+</html>

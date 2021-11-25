@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    .menu-img{
+    width: 2rem;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+.menu-img:hover{
+    width: 2.1rem;
+    color: white;
+    position: fixed;
+}
+</style>
+<body>
+    <div class="menu-atras">
+		<a href="index.html"><img class="menu-img" src="../img/atras.png" alt=""></a>
+	</div>
+    <h1>Formulario de registro</h1>
+    <form action="ejemplo.php" method="get">
+        <p>Nombre: <input type="text" name="nombre"></p>
+        <p>Apellidos: <input type="number" name="nacido" min="1900"></p>
+        <p>Sexo:
+          <input type="radio" name="hm" value="h"> Hombre
+          <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>Correo: <input type="number" name="nacido" min="1900"></p>
+        Población: <select>
+
+            <option>Barcelona</option>
+            <option>Tarragona</option>
+            <option>Girona</option>
+
+      
+        </select>  <br><br>
+       Descripción:<textarea name="texto" rows="10" cols="60"></textarea>
+
+        <p>
+            <input type="checkbox" name="casilla">Deseo recibir información sobre novedades y ofertas <br>
+            <br><input type="checkbox" name="casilla">Declaro haber leido y aceptado als condiciones generales del programa y la normativa sobre proteción de datos
+            <br><br>
+
+          <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>

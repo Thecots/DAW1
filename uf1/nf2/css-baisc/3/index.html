@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <p>14. Dissenya una pàgina web amb els següents estils CSS, que utilitzen diferents propietats CSS per
+        donar format al text:</p>
+    <hr>
+    <p class="f1">class f1 Font family Georigia</p>
+    <p class="f2">class f2 font sans serif, Decoració sobreimpressió y tot en mayusculas</p>
+    <p class="f3">class f3 font monospace y subrallada i negreta y primera lletra de cada paraula en mayuscules (Inicial)</p>
+    <p class="f3 f3-">class f3 font monospace y subrallada i negreta y primera lletra de cada paraula en mayuscules (la modificada)</p>
+    <br>
+    <p>texto nomral y <span class="f4">prueba con f4</span> fin.</p>
+    <br>
+    <p class="f5">prueba con f5 salta de linia debido a su anchura de solo 150px</p>
+    <p class="f6">pureba con f6</p>
+    <hr>
+    <p>15. En aquest exercici es vol realitzar una comparació entre les diferents unitats de mesura que afecten
+        les fonts, no cal definir un estil de classe, simplement es pot utilitzar l'etiqueta span amb l'estil en
+        línia:  span style = "font- size: xxx " ... / span. La pàgina ha de quedar semblant a la següent:</p>
+    <hr>
+
+<br>
+    <div class="caja-s">
+        <p>absoluto</p>
+    <div class="caja">
+        <span style="font-size: xx-small;">xx-small</span><br>
+        <span style="font-size: x-small;">x-small</span><br>
+        <span style="font-size: small;">small</span><br>
+        <span style="font-size: medium;">medium</span><br>
+        <span style="font-size: large;">large</span><br>
+        <span style="font-size: x-large;">x-large</span><br>
+        <span style="font-size: xx-large;">xx-large</span>
+    </div>
+</div>
+<div class="caja-s">
+    <p>em</p>
+    <div class="caja">
+        <span style="font-size: .5em;">.5em</span><br>
+        <span style="font-size: .7em;">.7em</span><br>
+        <span style="font-size: .9em;">.9em</span><br>
+        <span style="font-size: 1em;">1em</span><br>
+        <span style="font-size: 1.5em;">1.5em</span><br>
+        <span style="font-size: 2em;">2em</span><br>
+        <span style="font-size: 3em;">3em</span>
+    </div>
+</div>
+<div class="caja-s">
+    <p>%</p>
+    <div class="caja">
+        <span style="font-size: 50%;">50%</span><br>
+        <span style="font-size: 70%;">70%</span><br>
+        <span style="font-size: 90%;">90%</span><br>
+        <span style="font-size: 100%;">100%</span><br>
+        <span style="font-size: 150%;">150%</span><br>
+        <span style="font-size: 200%;">200%</span><br>
+        <span style="font-size: 300%;">300%</span>
+    </div>
+</div>
+<div class="caja-s">
+    <p>px</p>
+    <div class="caja">
+        <span style="font-size: 9px ;">9px</span><br>
+        <span style="font-size: 12px;">12px</span><br>
+        <span style="font-size: 14px;">14px</span><br>
+        <span style="font-size: 18px;">18px</span><br>
+        <span style="font-size: 24px;">24px</span><br>
+        <span style="font-size: 36px;">36px</span><br>
+        <span style="font-size: 48px;">48px</span>
+    </div>
+</div>
+<div class="caja-s">
+    <p>pt</p>
+    <div class="caja">
+        <span style="font-size: 9pt ;">9pt</span><br>
+        <span style="font-size: 12pt;">12pt</span><br>
+        <span style="font-size: 14pt;">14pt</span><br>
+        <span style="font-size: 18pt;">18pt</span><br>
+        <span style="font-size: 24pt;">24pt</span><br>
+        <span style="font-size: 36pt;">36pt</span><br>
+        <span style="font-size: 48pt;">48pt</span>
+    </div>
+</div>
+<br><hr>
+<p>16. Tenint en compte que, per defecte, els navegadors assignen els següents dimensions absolutes als
+    encapçalats (headers): h1 = xx-large, h2 = x-large, h3 = large, h4 = medium, h5 =
+    small, h6 = x-small, utilitzant per a tots ells un gruix de negreta, crea un pàgina que escrigui una
+    línia mitjançant l'etiqueta header corresponent en color negre, i una altra línia, on utilitzant color
+    taronja i la resta de propietats CSS, s'escrigui un text amb el mateix estil que el header corresponent.
+    A continuació es mostra un exemple de com s'ha de quedar la pàgina:</p><hr><br>
+
+    <div class="box-16">
+        <h1 class="b">Header 1</h1><br>
+        <h1 class="o">Header 1</h1><br>
+
+        <h4 class="b">Header 4</h4><br>
+        <h4 class="o">Header 4</h4><br>
+    </div>
+    <div class="box-16">
+        <h2 class="b">Header 2</h2><br>
+        <h2 class="o">Header 2</h2><br>
+
+        <h5 class="b">Header 5</h5><br>
+        <h5 class="o">Header 5</h5><br>
+    </div>
+    <div class="box-16">
+        <h3 class="b">Header 3</h3><br>
+        <h3 class="o">Header 3</h3><br>
+
+        <h6 class="b">Header 6</h6><br>
+        <h6 class="o">Header 6</h6><br>
+    </div>
+    <br><hr>
+    <p>17. Redefineix les etiquetes d'HTML necessàries, perquè les llistes d'elements no ordenades (ul)
+        apareguin amb el següent estil (pots utilitzar qualsevol imatge)</p>
+        <hr><br>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+        <br><hr>
+        <p>18. En aquest exercici es tracta de crear uns estils nous de classe, que incloguin una imatge de fons, de
+            manera que es puguin aplicar posteriorment als enllaços de la pàgina, per diferenciar els vincles a
+            arxius de tipus pdf, de tipus word, de tipus document de text, de tipus música i de tipus imatge. És
+            a dir, cada vegada que aparegui en el lloc web un enllaç a algun dels tipus d'arxius anteriors, en
+            aplicar la classe apropiada, apareixerà també una imatge que indicarà a l'usuari el tipus de vincle.
+            L'objectiu és definir 5 estils CSS (de classe) que aplicats als enllaços quedin de la següent manera:</p>
+            <hr><br>
+            <div class="amarillo">
+                <a href="#"> <img class="pdf"  src="pdf.png" alt="">Enlace a un documento PDF</a>
+                <a href="#"> <img class="word" src="word.png" alt="">Enlace a un docmento Word</a>
+                <a href="#"> <img class="txt"  src="txt.png" alt="">Enlace a un docuemnto de texto</a>
+                <a href="#"> <img class="mp3"  src="mp3.png" alt="">Enlace a musica</a>
+                <a href="#"> <img class="img"  src="png.png" alt="">Enlace a imagen</a>
+
+            </div>
+            <a href="../index.html" class="a">VOLVER</a>
+</body>
+</html>

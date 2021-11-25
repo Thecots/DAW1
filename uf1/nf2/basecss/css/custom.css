@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    background: #20c2af;
+    transition: all .7s ease;
+    -webkit-transition: all 7.s ease;
+    -moz-transition: all 7.s ease;
+    -o-transition: all 7.s ease;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
+    padding: 7px 5%;
+    width: 100%;
+    height: auto;
+}
+.header-right {
+    margin-right: 0%;
+
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:rgb(240, 240, 240);
+    transition: background-color 450ms;  
+}
+
+section{
+    padding: 100px;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+body.seccio1{
+    background-color: #1272c3;
+}
+
+body.seccio2{
+    background: #f4f4f4;
+}
+body.seccio2 nav ul li a{
+    color: #f4f4f4;
+}
+body.seccio2 nav ul li a{
+    color: #000;
+}
+body.seccio3{
+    background-color: #d45601;
+}
+
+body.seccio4{
+    background: #f800d7;
+}
+
+.caja-1{
+    width: 1700px;
+    height: 750px;
+    background: red;
+}
+#contenedor{
+    width: 700px;
+    height: 550px;
+    background: #fff;
+    margin: 5% auto;
+    box-shadow: 0 0 50px 0  rgba(0, 0, 0, 0.212);
+
+    
+}
+.cabecera{
+    width: auto;
+    height: 20px;
+    background-color: rgb(170 187 170);
+}
+#menu{
+    width: 180px;
+    height: 462px;
+    background: rgb(255, 255, 255);
+    float: left;
+    padding: 50px 0px 0px 10px;
+}
+
+.pie{
+    clear: both;
+    background-color:rgb(170 187 170);
+}
+
+#menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    border: 0px;
+    
+    border-bottom: 1px solid red;
+    border-style: dotted;
+    
+}
+
+.links{
+    width: 700px;
+    height: auto;
+    float: right;
+}
+.img-5{
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+.p-1-5{
+    margin: 0px 0 0 0;
+}
+
+
+.contenido{
+    width: 510px;
+    height: 512px;
+    background: red;
+    float: left;
+}
+
+.principal{
+    width: 380px;
+    height: 512px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+.secundario{
+    width: 130px;
+    height: 512px;
+
+    background-color: rgb(255, 255, 255);
+    float: left;
+
+}
+.anuncio{
+    width: 110px;
+    height: 100px;
+    padding: 35px 5px 0px 5px;
+    margin: 50% auto;
+    background: rgb(78 182 195);
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    border: 0px;
+    border-bottom: 15px solid rgba(0, 104, 104, 0.548);
+}
+.a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #0059ff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   .a:hover{
+       background-color: #2e97ff;
+   
+   }
+   .a:active{
+       background-color: #0065ca;
+   
+   }
+
+
+.piepie{
+    width: 100%;
+    height: 20px;
+
+    background: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+}
+.piepie p{
+    float: right;
+}
+
+.s-contenedor{
+    width: 80%;
+    height: 113px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: #cfe986;
+}
+
+.s-header{
+    z-index: 100;
+    overflow: hidden;
+    padding: 7px 5%;
+    width: 90%;
+    height: 75px;
+}
+
+.s-logo{
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.s-menu{
+    width: 325px;
+    float: right;
+    height: auto;
+    top: 50%;
+    padding: 40px 0px 40px 0;
+    background-color:#cfe986;
+
+}
+
+.s-menu ul{
+    display: flex;
+}
+.s-logo img {
+    width: 56px;
+    padding: 15px;
+}
+
+.s-menu a{
+    padding: 20px;
+
+}
+
+.cosas{
+    padding: 0 10%;
+    width: 60%;
+    height: 65%;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: #cfe986;
+    overflow: auto;
+}
+.cosas1{
+    width:75%;
+    height: auto;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.cosas2{
+    width: 25%;
+    height: auto;
+    float: right;
+    position: sticky;
+    top: 0;
+}
+
+/* . */
+
+.s-sidevar{
+    width: 200px;
+    height: 235px;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
+.s-sidevar a{
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 10px 24px;
+    transition: background-color 300ms;
+}
+
+.s-sidevar a:hover{
+    background-color: rgba(180, 180, 180, 0.897);
+}
+.s-sidevar a:active{
+    background-color: rgba(255, 255, 255, 0.658);
+}
+.s-sidevar h1{
+    color: #fff;
+}
+
+.s-sidevar p{
+    color: #fff;
+}

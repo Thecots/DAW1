@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding:0;
+    border:0 none;
+    position: relative;
+     outline: none;
+}
+
+html, body {
+  background:  #b2f3dd;
+  font-family: "Montserrat";
+  font-weight: 300;
+  width: 100%;
+
+}
+
+h2, h3 {
+    width: 100%;
+    min-height: 200px;
+    line-height: 200px;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    
+    color: rgb(0, 0, 0);
+  }
+  
+  h2 > a, h3 > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+  }
+  /* -----------*/
+
+.box{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.295);
+}
+  
+
+/* 1 */
+
+.cero {
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    overflow: hidden;
+    transition: clip-path 475ms ease;
+  }
+  .cero:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .cero::before {
+    position: absolute;
+    content: attr(data-content);
+    color: rgb(125, 125, 230);
+    text-decoration: underline;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 475ms ease;
+  }
+
+  /* 2 */
+
+
+  .uno > a:before {
+  content: "";
+  background: #ffa0a0;
+  position: absolute;
+  width: 110%;
+  height: 5px;
+  bottom: 0;
+  left: -5%;
+  border-radius: 5px;
+  transform: scaleY(0);
+  animation: 0.6s forwards no-hover-v linear;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+.uno > a:hover:before,
+.uno > a:focus:before {
+  animation: .5s forwards hover-v linear;
+  animation-fill-mode: forwards;
+}
+@keyframes hover-v {
+  0% {
+    transform: scaleY(1);
+    width: 0;
+     }
+
+  50% {
+    width: 110%;
+
+   }
+   60%{
+    transform: scaleY(1);
+    height: 5px;
+
+   }
+  100% {
+    transform: scaleY(1);
+    height: 100%;
+     }
+}
+
+@keyframes no-hover-v {
+    0% {
+        transform: scaleY(1);
+        height: 100%;
+        width: 110%;
+
+       }
+    40% {   
+        transform: scaleY(1);
+        height: 5px;
+        width: 110%;
+
+       } 
+    50% {
+        width: 110%;
+        height: 5px;
+        transform: scaleY(1);
+   
+    }
+       100% {
+        transform: scaleY(1);
+          width: 0px;
+          height: 5px;
+         }
+  }
+
+ /* 3 */
+
+
+ .bis > a:before {
+    content: "";
+    background: #f7f5a2;
+    position: absolute;
+    width: 110%;
+    height: 5px;
+    bottom: 0;
+    left: -5%;
+    border-radius: 5px;
+    transform: scaleY(0);
+    animation: 0.3s forwards no-hover-t linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+  }
+  .bis > a:hover:before,
+  .bis > a:focus:before {
+    animation: .3s forwards hover-t linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hover-t {
+    0% {
+      transform: scaleY(1);
+      width: 0;
+      height: 100%;
+
+    }
+     50%{
+      transform: scaleY(1);  
+     }
+    100% {
+      transform: scaleY(1);
+      width: 110%;
+      height: 100%;
+
+       }
+  }
+  
+  @keyframes no-hover-t {
+      0% {
+        transform: scaleY(1);
+        width: 110%;
+        height: 100%;
+  
+         }
+      50% {
+        transform: scaleY(1);  
+
+     
+      }
+         100% {
+            transform: scaleY(1);
+            width: 0;
+            height: 100%;
+           }
+    }
+
+ /* 4 */
+
+
+ .dos > a:before {
+    content: "";
+    background: #c3a6e9;
+    position: absolute;
+    width: 110%;
+    height: 5px;
+    bottom: 0;
+    left: -5%;
+    border-radius: 5px;
+    transform: scaleY(0);
+    animation: 0.6s forwards no-hover-c linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+  }
+  .dos > a:hover:before,
+  .dos > a:focus:before {
+    animation: .5s forwards hover-c linear ;
+    animation-fill-mode: forwards;
+
+  }
+  @keyframes hover-c {
+    0% {
+ 
+        transform: scaleY(1);
+        width: 5px;
+        height: 10px;
+        top: 0;
+    }
+    50%{
+        transform: scaleY(1);
+        width: 5px;
+        height: 65px;
+        top: 0px;
+     }
+    100% {
+
+        transform: scaleY(1);
+        width: 300px;
+        height: 65px;
+        top: 0px;
+       }
+  }
+
+  @keyframes no-hover-c {
+    0% {
+ 
+        transform: scaleY(1);
+        width: 300px;
+        height: 65px;
+        top: 0px;
+    }
+    80%{
+        transform: scaleY(1);
+        width: 0px;
+        height: 65px;
+        left: 285px;
+     }
+    100% {
+        transform: scaleY(1);
+        width: 0;
+        height: 0;
+        top: 0px;
+
+       }
+  }
+
+/* 5 */
+
+.tres > a:before {
+    content: "";
+    background: #9dfcb9;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transform: scaleX(0);
+    animation: .4s forwards no-hover-v linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+  }
+  .tres > a:hover:before,
+  .tres > a:focus:before {
+    animation: .5s forwards hover-v linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hover-v {
+    0% {
+        transform: scaleX(0);
+        height: 5px;
+       }
+    45% {   
+        transform: scaleX(1.05);
+        height: 5px;
+       }
+    55% {height: 5px;}
+    100% {
+        transform: scaleX(1.05);
+        height: 3.8rem;
+       }
+  }
+  @keyframes no-hover-v {
+    0% {
+        transform: scaleX(1.05);
+        height: 3.8rem;
+       }
+    45% {height: 5px;}
+    55% {   
+        transform: scaleX(1.05);
+        height: 5px;
+        opacity: 1;
+       }
+    
+    100% {
+        transform: scaleX(0);
+        height: 5px;
+        opacity: .02;
+       }
+  }

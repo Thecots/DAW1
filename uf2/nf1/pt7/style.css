@@ -1,0 +1,112 @@
+*{
+    margin: 50px;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,134,138,1) 0%, rgba(0,134,138,1) 50%, rgba(255,255,255,1) 50%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+ .box{
+     margin: 0 auto;
+     
+     width: 1000px;
+     height: 390px;
+     background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+     
+     position: relative;
+     overflow: hidden;
+ }
+
+ img{
+     width: 250px;
+     display: flex;
+     position: absolute;
+     margin-top: 110px;
+
+ }
+
+ .im2{
+    right: 10px;
+    transform: rotate(30deg);
+    animation: i1 infinite 5s;
+ }
+
+ .im3{
+     left: 10px;
+     transform: rotate(-30deg);
+     animation: i2 infinite 5s;
+
+ }
+
+@keyframes i1{
+    50%{
+        transform: rotate(-135deg);
+        right: 320px;
+    }
+    85%{
+        right: 320px;
+        transform: rotate(-135deg);
+    }
+    100%{
+        right: 10px;
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes i2{
+    50%{
+        left: 320px;
+        transform: rotate(135deg);
+
+    }
+    85%{
+        left: 320px;
+        transform: rotate(135deg);
+    }
+    100%{
+        left: 10px;
+        transform: rotate(-30deg);
+    }
+}
+
+    .im4{
+        margin-top: 455px;
+        width: 150px;
+        left: 372px;
+        animation: i3 infinite 5s;
+
+}
+
+
+@keyframes i3{
+    50%{
+        margin-top: 155px;
+        width: 150px;
+        left: 372px;
+
+    }
+    85%{
+        margin-top: 155px;
+        width: 150px;
+        left: 372px;
+    }
+    100%{
+        margin-top: 455px;
+        width: 150px;
+        left: 372px;
+    }
+}

@@ -1,0 +1,371 @@
+.a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #0059ff;
+    padding: 7px 50px ;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 30px 30px;
+   }
+   .a:hover{
+       background-color: #2e97ff;
+   
+   }
+   .a:active{
+       background-color: #0065ca;
+   
+   }
+.h19-1{
+    border: 3px solid;
+}
+.ah19-1{
+    border: dotted red;
+}
+.d2 .ah19-1{
+    margin-right: 10px;
+}
+
+.j454{
+    position: relative;
+    left: 45px;
+    top: 15px;
+}
+.d3 .f-1{
+    position: relative;
+    top: 75px;
+}
+.d3 .h3{
+    position: relative;
+    bottom: 40px;
+    left: 150px;
+    width: 200px;
+    
+}
+
+.d4 .f-1{
+    position: absolute;
+    margin-top: 60px;
+}
+.blue-box{
+    border: 3px solid blue;
+    width: 400px;
+    height: 110px;
+    margin: 35px auto;
+    padding: 10px;
+}
+.d5 .abs{
+    position: absolute;
+    
+}
+.d5 .abss{
+    position: absolute;
+    top: 60px;
+}
+.d5 .absd{
+    position: absolute;
+}
+.lll{
+    position: relative;    
+}
+.looo{
+    height: 500px;
+}
+
+.d5 .capa1{
+    border: 2px solid blue;
+    width: 100px;
+    margin: 0;
+}
+.d5 .capa2{
+    border: 4px solid orange;
+    width: 100px;
+    margin: 0;
+}
+.d5 .capa3{
+    border: 8px solid red;
+    width: 100px;
+    margin: 0;
+}
+.q{
+    float: right;
+}
+.q1{
+    float: left;
+}
+.looo{
+    border: none;
+}
+.black-box{
+    border: 1px solid;
+    border-style: dashed;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    margin: 5px auto;
+}
+.black-box .capa1{
+    height: 20px;
+    float: left;
+}
+.black-box .capa2{
+    height: 20px;
+    float: left;
+}
+.black-box .capa3{
+    height: 20px;
+    float: left;
+}
+.black-box-26{
+    width: 250px;
+    height: 100px;
+    border: 6px solid;
+    border-style: dashed;
+    position: static;
+    margin: 20px auto;
+
+}
+.capa1-26{
+    height: 20px;
+    border: 2px solid blue;
+    width: 100px;
+    float: left;
+    margin: 0;
+}
+.capa2-26{
+    width: 100px;
+    height: 20px;
+    margin: 0;
+    border: 4px solid orange;
+    float: left;
+
+
+}
+.capa3-26{
+    float: left;
+    width: 100px;
+    height: 20px;
+    margin: 0;
+    border: 8px solid red;
+
+}
+.black-box-27{
+    width: 250px;
+    height: 100px;
+    border: 6px solid;
+    border-style: dashed;
+    position: static;
+float: right;
+top: 10px;
+}
+
+.black-box-227{
+    border: 1px solid;
+    border-style: dashed;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    margin: 5px auto;
+    position: static;
+    float: left;
+}
+
+.black-box-28{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    margin: 5px auto;
+    position: static;
+    float: left;
+}
+.capa1-27{
+    border: 2px solid blue;
+    width: 100px;
+    margin: 0;
+    height: 20px;
+}
+.capa2-27{
+    border: 4px solid orange;
+    width: 100px;
+    margin: 0;
+    height: 20px;
+}
+.capa3-27{
+    border: 8px solid red;
+    width: 100px;
+    margin: 0;
+    height: 20px;
+}
+.black-box-288{
+    width: 100px;
+    height: 150px;
+    position: static;
+    float: right;
+    right: 10px;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.n-29-r-1{
+height: 100px;
+width: 100px;
+border: 3px solid red;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.n-29-v-1{
+    height: 50px;
+    width: 300px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.n-29-b-1{
+    height: 50px;
+    width: 300px;
+    border: 3px solid blue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.n-29-r-2{
+    height: 100px;
+    width: 100px;
+    border: 3px solid red;
+    padding: 10px;
+    float: left;
+}
+    
+.n-29-v-2{
+    height: 50px;
+    width: 300px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.n-29-b-2{
+    height: 50px;
+    width: 300px;
+    border: 3px solid blue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.n-29-r-3{
+    height: 100px;
+    width: 100px;
+    border: 3px solid red;
+    padding: 10px;
+    float: left;
+}
+
+.n-29-v-3{
+    height: 50px;
+    width: 300px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.n-29-b-3{
+    height: 50px;
+    width: 300px;
+    border: 3px solid blue;
+    padding: 10px;
+    margin-bottom: 10px;
+    clear: left;
+}
+
+.a-30{
+    width: 700px;
+    height: 40px;
+    background: rgb(196, 196, 196);
+    border: 1px rgb(122, 122, 99);
+    margin: 2px auto;
+}
+.s-30{
+    float: left;
+    padding: 10px;
+}
+.s-30-s{
+    float: right;
+    padding: 10px;
+}
+.caja-31{
+    border: 1px solid;
+    width: 300px;
+    height: 80px;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+.caja-31 span{
+    border: 5px solid orange;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.p-31-5{
+    visibility: hidden;
+}
+
+
+.p-31-6{
+    display: none;
+}
+
+.span-1{
+    border: 5px solid orange;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    
+}
+
+.caja-31-1 p{
+    border: 5px solid orange;
+    width: 100px;
+    display: none;
+}
+.caja-32{
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+
+}
+.cajaaaaa{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.div1{
+    border: 2px solid red;
+    width: 300px;
+    margin-bottom: 150px;
+}
+
+.div2{
+    border: 2px solid blue;
+    width: 300px;
+    margin-bottom: 150px;
+}
+.div3 {
+    border: 2px solid blueviolet;
+    height: 350px;
+    width: 900px;
+    float: right;
+    margin: -346px 658px;
+}
+.div3_1{
+    border: 2px solid orange;
+    border-style: dashed;
+    height: 200px;
+    margin-top: 20px;
+}

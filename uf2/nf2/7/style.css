@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.dn{
+    display: none;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.box{
+    background-color: white;
+    border-radius: 5px;
+    width: 95%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.title{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.ex{
+    background-color: white;
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    height: auto;
+}
+
+/* 1 */
+
+.ex1-circle{
+    margin: 30px 10px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: 2s linear infinite ex1;
+}
+
+@keyframes ex1{
+    0%{
+
+    }50%{
+        border-radius: 0;
+        background-color: rgb(54, 98, 230);
+    }100%{
+
+    }
+}
+
+/* 2 */
+
+.ex2-box{
+    border: 1px solid;
+    width: 600px;
+    height: 250px;
+    margin: 15px 0;
+}
+
+.ex2-circle{
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    animation: 5s linear alternate-reverse infinite ex2;
+    position: relative;
+}
+
+@keyframes ex2{
+    0%{
+        top: 0;
+        left: 0;
+    
+    }25%{
+        top: 0;
+        left: 523px;
+    }50%{
+        top: 173px;
+        left: 523px;
+    }75%{
+        top: 173px;
+        left: 0;
+    }100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+/* 3 */
+
+.ex3-box div{
+    background-color: red;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    padding: 5px;
+}
+
+@keyframes ex3{
+    0%{
+        left: 0;
+    }40%{
+        left: 500px;
+    }50%{
+        left: 500px;
+    }90%{
+        left: 0;
+    }100%{
+        left: 0;
+    }
+}
+
+/* 4 */
+
+.ex4-circle{
+    width: 150px;
+    height: 150px;
+    margin: 30px 10px;
+    border-radius: 50%;
+    border: black 1px solid;
+    position: relative;
+    animation: ex4 2s infinite;
+}
+
+@keyframes ex4 {
+    0% {
+        left: 0px;
+    }
+    50% {
+        transform: rotateX(55deg);
+        box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.541);
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+/* 5 */
+
+.reloj{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ex5s{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(255, 12, 12)0%, rgb(255, 0, 0) 50%, rgba(255, 255, 255, 0) 50%);
+    width: 2px;
+    height: 130px;
+    animation: 60s linear infinite ex5s;
+    position: absolute;
+}
+
+.ex5m{
+    background: rgb(54, 54, 54);
+    background: linear-gradient(180deg, rgb(90, 90, 90)0%,rgb(90, 90, 90) 50%, rgba(255, 255, 255, 0) 50%);
+    width: 2px;
+    height: 130px;
+    animation: 3600s linear infinite ex5s;
+    position: absolute;
+}
+
+.ex5h{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(0, 0, 0)0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 50%);
+    width: 4px;
+    height: 130px;
+    animation: 86400s linear infinite ex5s;
+    position: absolute;
+}
+
+@keyframes ex5s{
+    0%{
+
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.h1{
+    width: 2px;
+    height: 150px;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(255,255,255,0) 5%, rgba(255,255,255,0) 95%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+}
+
+/* 5 */
+
+.ex5{
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    animation: infinite linear ex6 3s;
+    position: relative;
+    left: 300px;
+
+}
+
+@keyframes ex6{
+    0%{
+        left: 300px;
+        top: 0;
+    }35%{
+        top: 135px;
+        left: 350px;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        transform: rotate(150deg);
+        border-radius: 0;
+    }65%{
+        top: 195px;
+        transform: rotate(0deg);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        left: 150px;
+        background-color: red;
+    }95%{
+        left: 300px;
+        top: 0;
+        background-color: royalblue;
+        
+    }100%{
+
+    }
+}
+
+/*  10 */
+
+.ex10-box{
+    width: 100%;
+    height: 150px;
+    border: 1px solid;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}   
+
+.aaaa
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.ex10-box img{
+    position: absolute;
+}
+
+.auto{
+    width: 250px;
+    margin: 0px 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.rueda{
+    width: 20px;
+    bottom: 0px;
+}
+
+.rueda1{
+    left: 67px; 
+    animation: linear infinite 1s ereuda;
+
+}
+.rueda2{
+    left: 195px;
+    animation: linear infinite 1s ereuda;
+
+}
+
+.ex5-auto{
+    width: 270px;
+    height: 90px;
+    position: absolute;
+    bottom: 3px;
+    animation: linear infinite 4s eauto;
+    left: 0;
+    z-index: 20;
+}
+
+@keyframes eauto{
+    0%{
+    }15%{
+        transform: rotate(-10deg);
+        bottom: 10px;
+    }20%{
+        transform: rotate(-10deg);
+        bottom: 10px;
+    }
+    35%{
+        transform: rotate(0deg);
+        bottom: 3px;
+
+    }100%{
+        left: 100%;
+    }
+}
+
+
+@keyframes ereuda{
+    0%{
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* 8 */
+.ex8-box{
+    width: 700px;
+    height: 150px;
+    border: 1px solid;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}   
+
+.ex8-box .asimg{
+    position: absolute;
+    width: 2250px;
+    left: 0;
+    top: -200px;
+    animation: infinite linear map 5s;
+
+}
+
+.avio{
+    position: absolute;
+    width: 30px;
+    bottom: 55px;
+    left: 155px;
+    animation: infinite linear avio 5s;
+
+}
+
+@keyframes map{
+    0%{
+        width: 2250px;
+        left: 0;
+        top: -200px;
+    }50%{
+        width: 2000px;
+    }80%{
+        width: 2250px;
+        top: -120px;
+        left: -1050px;
+    }100%{
+        width: 2250px;
+        top: -120px;
+        left: -1050px;
+    }
+}
+
+@keyframes avio{
+    0%{
+        width: 30px;
+        bottom: 55px;
+        left: 155px;
+    }50%{
+        width: 40px;
+    }
+    70%{
+        transform: rotate(-15deg);
+    }80%{
+        width: 30px;
+        bottom: 70px;
+        left: 415px;
+    }100%{
+        width: 30px;
+        bottom: 70px;
+        left: 415px;
+    }
+}
+
+/* 7 */
+.f1{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 780px;
+}
+.f1 div{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(243, 243, 243);
+    margin: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.f1 div{
+    background-color: rgb(148, 148, 148);
+    width: 110px;
+    height: 110px;
+
+}
+
+.dd1{
+    background-color: royalblue;
+    width: 110px;
+    height: 1210px;
+}

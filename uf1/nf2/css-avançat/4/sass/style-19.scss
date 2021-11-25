@@ -1,0 +1,49 @@
+//Colors principals
+$color-background: #FFFFFF;
+$color-base: #333333;
+//Colors barra de menú
+$navbar-background-color: rgb(155, 111, 145);
+$navbar-color-hover: $color-background;
+//Bordes
+$border-color: $color-base;
+$border-width: 0.1rem;
+$border-style: "solid";
+$border-radius-small: 0.2rem;
+$border-radius: 1rem;
+$border-radius-big: 2rem;
+/*Contenedor principal*/
+$main-container-width: 80%;
+/*Figura (imatges)*/
+$figure-width: 20%;
+
+.container{
+    nav{
+        background-color: $navbar-background-color;
+        width: 80%;    
+            ul{
+                list-style: none;
+                display: inline-flex;
+                    li{
+                        margin: 5px 10px 5px 30px;
+                    }
+                    .active{
+                        color: $navbar-color-hover;
+                        font-weight: bold;
+                    }
+            }
+    }
+
+    .card{
+        img{
+            width: $figure-width;
+            border-radius: ($border-radius-big * 4);
+        }
+        padding: 40px;
+        background-color: red;
+        border: 5px solid $color-base;
+        border-radius: 40px;
+        figcaption{
+            width: 100px;
+        }
+    }
+}

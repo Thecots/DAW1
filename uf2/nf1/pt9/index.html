@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="uno">
+        <hr><p style="margin: 10px 10px;">1. Inserta utilitzant el tag < video > un vídeo que inclogui els formats webm, ogg i mp4 (indica els valors corresponents al atribut type).</p><hr><br>
+        <h1>.MP4</h1>
+        <video controls >
+            <source  src="video/mp4.mp4" type="video/mp4">
+        </video>
+        <h1>.WEBM</h1>
+        <video controls  >
+            <source  autoplay  src="video/webm.webm" type="video/webm">
+        </video>
+        <h1>.ogg</h1>
+        <video controls>
+            <source src="video/ogg.ogg" type="video/ogg">
+        </video><br><br>
+    </div>
+    <hr><p style="margin: 10px 10px;">2. Utilitza l'etiqueta < audio > per insertar un àudio (inclou dos formats d'àudio diferents).</p><hr><br>
+<div class="dos">
+    <h1>.MP3</h1>
+    <audio controls>
+      <source src="audio/mp3.mp3" type="audio/ogg">
+   </audio>        
+  <h1>.ogg</h1>
+  <audio controls>
+      <source src="audio/ogg.ogg" type="audio/ogg">
+  </audio>
+</div>
+<hr><p style="margin: 10px 10px;">3. Mostra un vídeo amb els seus controls (stop, play, volum... etc.) amb javascript (ajuda: https://www.eniun.com/control-reproduccion-video-audio-javascript/).</p><hr><br>
+
+<div slass="tres">
+    <div class="hola" style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="document.getElementById('video1').volume+=1">Volumen +</button>
+        <button onclick="document.getElementById('video1').volume-=1">Volumen -</button>
+        <br><br>
+     
+        <video id="video1" width="420">
+          <source src="video/mp4.mp4" type="video/mp4">
+          <source src="video/ogg.ogg" type="video/ogg">
+        </video><br><br>
+        <button onclick="makeBig()">Grande</button>
+        <button onclick="makeSmall()">Pequeño</button>
+        <button onclick="makeNormal()">Normal</button>
+      </div> 
+</div>
+
+<script> 
+    var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+
+</script> 
+</body>
+</html>

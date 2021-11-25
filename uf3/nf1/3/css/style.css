@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: rgb(240, 249, 255);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+    z-index: 10;
+}
+    header  .logo{
+        display: flex;
+        align-items: center;
+    }
+        header .logo img{
+            width: 45px;
+        }
+        header .logo h1{
+            font-weight: 400;
+        }
+    header .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        width: 25%;
+        position: relative;
+        padding: 0 35px 0 5px;
+        box-sizing: content-box;
+
+    }
+        header .search input{
+            height: 30px;
+            width: 100%;
+            outline: none;
+            border: 1px solid rgb(187, 187, 187);
+            border-radius: 5px;
+            font-size: 18px;
+            padding-left: 5px;
+            padding-right: 40px;
+        }
+        header .search img{
+            position: absolute;
+            width: 25px;
+            top: 14px;
+            right: 42px;
+            cursor: pointer;
+        }
+    header .perfil{
+        width: 300px;
+        height: 44px;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+main{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    z-index: 5;
+}
+    main .box{
+        height: auto;
+        width: 1000px;
+        
+    }
+        .box .slider{
+            position: relative;
+            width: 1000px;
+            height: 535px;;
+        }
+        .box  .slider img{
+            margin-top: 25px;
+            width: 1000px;
+            border-radius: 5px;
+        }
+        .box .slider .name{
+            position: absolute;
+            width: 1000px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.651);
+            left: 0;
+            bottom: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            bottom: 10px;
+            border-radius: 0 0px 5px 5px;
+        }
+            .name h1{
+                color: white;
+                font-weight: 400;
+                font-size: 45px;
+            }
+            .name p{
+                color: white;
+                font-weight: 400;
+                font-size: 25px;
+            }
+    .slider1{
+        width: 100%;
+        height: 500px;
+        margin-top: 10px;
+    }
+        .slider1 .title {
+            border-bottom: 1px solid;
+        }
+        .slider1 .title h1{
+            font-weight: 400;
+            font-weight: 25px;
+        }
+    .slider1 .box-book{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .box-book img{
+        width: 200px;
+        height: 300px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.548);
+        transition: all 0.5s;
+    }
+
+    .box-book img:hover{
+        transform: scale(1.1);
+    }
+
+
+.screen{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .screen .s_box{
+        width: 600px;
+        height: 500px;
+        background-color: white;
+
+    }
+    .s_box .close{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .s_box .close a{
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .s_box .text{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    .scr1{
+        display: none;
+        border-radius: 5px;
+    }
+    .scr2{
+        display: none;
+        border-radius: 5px;
+    }
+    .scr3{
+        display: none;
+        border-radius: 5px;
+    }

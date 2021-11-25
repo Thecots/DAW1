@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <p>20. Mitjançant CSS es poden establir 4 maneres bàsiques de posicionar els elements a la pàgina. La
+        primera és el posicionament estàtic, que és el model que utilitzen per defecte els navegadors (com es va
+        veure en l'exercici anterior), i on la distància entre els elements de bloc ve determinada pels marges
+        verticals, i la distància entre els elements de línia pels marges laterals. Redefineix els estils de l'exercici
+        anterior, afegint marges de 10 píxels per a tots els elements, i confirma que queda de la següent manera:</p>
+    <hr><br>
+    <div>
+        <p class="h19-1">Parrafo 1:Los parrafos son elementos de bloque</p>
+        <p><a class="ah19-1" href="">Un enlace</a> puede aparecer al lado de <a class="ah19-1" href="">otro enlace</a></p>
+        <p class="h19-1">Parrafo 2:Un parrafo puede contener <a href="" class="ah19-1">un enlace </a>dentro del parrafo</p>
+        <p>Por defecto,</p>
+        <h3>un Header 3</h3>
+        <p>no puede aparecer al lado de </p>
+        <h3>otro Header 3</h3>
+    </div>
+    <br><hr>
+    <p>21. El posicionamient relatiu consisteix en posicionar una caixa segons el posicionament estàtic o
+        normal, i després desplaçar-la respecte de la seva posició original. El desplaçament de la caixa es
+        controla amb les propietats top, right, bottom i left. Per comprovar-ho, dissenya una pàgina com la de
+        l'exemple, on inicialment es mostra els tres enllaços i el paràgraf mitjançant posicionament estàtic (per
+        defecte), i a continuació, es mostra com l’enllaç 2 s'ha posicionat de manera relativa, col·locant-lo a 15
+        píxels de seva posició superior (top) original, i a 45 píxels de la seva posició esquerra (left) original:</p>
+    <hr><br>
+    <div class="d2">
+        <a href="" class="ah19-1">Enlace  1</a><a href="" class="ah19-1">Enlace  2</a><a href="" class="ah19-1">Enlace  3</a>
+        <p class="h19-1">Parrafo 1: Así quedariamediante posicionamento estatico</p>
+        <a href="" class="ah19-1">Enlace  1</a><a href="" class="ah19-1 j454">Enlace  2</a><a href="" class="ah19-1">Enlace  3</a>
+        <p class="h19-1">Parrafo 2: El enlace 2 tiene una posicion relativo</p>
+
+    </div>
+    <br><hr>
+    <p>22. També és important tenir en compte que el posicionament relatiu no influeix sobre la resta
+        d'elements, així per exemple, si per a l'exercici anterior es decideix posicionar de manera relativa l’enllaç
+        1, col·locant-75 píxels per sota de la seva posició original, això no influeix sobre la resta d'elements
+        (enllaços i paràgrafs), que segueixen ocupant la seva posició normal o estàtica (prova-ho):</p>
+    <hr><br>
+    <div class="d3 d2">
+        <a href="" class="ah19-1 f-1">Enlace  1</a><a href="" class="ah19-1">Enlace  2</a><a href="" class="ah19-1">Enlace  3</a>
+        <p class="h19-1">Parrafo 1: Así quedariamediante posicionamento estatico</p><br><br>
+        <h3>Un Header 3</h3>
+        <h3 class="h3" >Otro Header 3</h3>
+    </div>
+    <br><hr>
+    <p>23. Mitjançant el posicionamient absolut, la posició d'un element s'estableix de forma absoluta respecte
+        del seu element contenidor (el que el conté), i la resta d'elements de la pàgina ignoren la seva posició,
+        ocupant el seu lloc. Per provar-ho, canvia el posicionament de l'enllaç 1 de l'exercici anterior, de relatiu
+        a absolut, sense canviar cap altra propietat, i comprova que s'obté el següent resultat, on els enllaços 2 i
+        3 han ocupat l'espai deixat per l'enllaç 1:</p>
+    <hr><br>
+    <div class="d4 d2">
+        <a href="" class="ah19-1 f-1">Enlace  1</a><a href="" class="ah19-1">Enlace  2</a><a href="" class="ah19-1">Enlace  3</a>
+        <p class="h19-1">Parrafo 1: Así quedariamediante posicionamento estatico</p><br><br>
+    </div>
+    <br><hr>
+    <p>24. En el posicionament absolut, per establir quin és l'origen de coordenades d'un element, el navegador
+        es queda amb el primer element contenidor començant pel més proper, tal que estigui posicionat de
+        qualsevol forma diferent a la estàtica. Anem a comprovar-ho mitjançant un exemple, on primer es mostra
+        una capa (sense indicar res respecte al seu posicionament, per tant amb posicionament estàtic), que conté
+        un enllaç 1 i tot seguit un paràgraf. Posteriorment, es torna a mostrar la capa, però aquesta vegada l'enllaç 
+        2 es posiciona de manera absoluta amb propietats top = 60px. Què succeeix? Finalment, a la tercera
+        capa, canvia les seves propietats, afegint posicionament relatiu, sense indicar cap valor. I afegint dins
+        aquesta tercera capa, també un enllaç 3 posicionat de manera absoluta amb propietats top = 60px. Què
+        succeeix? Comprova que la pàgina queda així pels 3 casos:</p>
+    <hr><br>
+    <div class="d5">
+        <div class="blue-box">
+            <a href="" class="ah19-1">Enlace 1</a>
+            <p class="h19-1">CASO 1: posicionamento estático</p>
+            <a href="" class="ah19-1 abs">Enlace 2</a>
+
+        </div>
+        <div class="blue-box">
+            <p class="h19-1">CASO 2: posicionamento estático y enlace 2 con posicionamiento absoluto</p>
+            <a href="" class="ah19-1 abss">Enlace 2</a>
+        </div>
+        <div class="blue-box lll">
+            <p class="h19-1">CASO 3: posicionamiento relativo de la capa y enlace 3 con posicionamiento absoluto</p>
+            <a href="" class="ah19-1 absd">Enlace 3</a>
+        </div>
+        <br><hr>
+        <p>25. L'últim mètode per posicionar els elements, denominat posicionament flotant, consisteix a desplaçar
+            un element fins a la zona més a l'esquerra o més a la dreta possible, respecte a la seva posició original.
+            Els elements en línia fan lloc als elements flotants, i els elements de bloc adapten el seu contingut. Per
+            entendre això, vegem el següent exemple, en el qual apareixen 3 capes amb vores de 2,5 i 8 píxels
+            respectivament i colors blau, taronja i vermell. Totes les capes tenen un ample de 100 píxels. En el primer
+            cas apareixen totes amb posicionament normal o estàtic, en el segon cas la capa 1 flota cap a la dreta, i
+            en el tercer cas la capa 1 flota cap a l'esquerra (la capa 2 adapta el seu contingut). Prova-ho:</p>
+        <hr><br>
+        <div class="d5">
+            <div class="blue-box looo">
+              <h4>POSICIONAMINETO ESTATICO</h4>
+                <p class="capa1">capa 1</p>
+                <p class="capa2">capa 2</p>
+                <p class="capa3">capa 3</p>
+              <h4>CAPA 1 FLOTA A LA DERECHA</h4>
+                <p class="capa1 q">capa 1</p>
+                <p class="capa2">capa 2</p>
+                <p class="capa3">capa 3</p>
+              <h4>CAPA 1 FLOTA A LA IZQUIERDA</h4>
+              <p class="capa1 q1">capa 1</p>
+              <p class="capa2">capa 2</p>
+              <p class="capa3">capa 3</p>
+
+            </div>
+    </div>
+    <br><hr>
+    <p>26. En el posicionament flotant, al posicionar un element, si no hi ha lloc a la línia actual, l'element
+        baixa a la línia inferior, fins que trobi el lloc necessari per mostrar-se el més a la dreta o a l'esquerra
+        possible en la nova línia. Per veure això, dissenya una pàgina com la que es mostra a continuació, on les
+        3 capes de l'exercici anterior, es posicionen de manera flotant cap a l'esquerra, i apareixen primer dins
+        d'una capa de 350px d'ample per 100 d'alt, i després , dins d'una capa de 250px d'ample per 100 d'alt, on
+        s'aprecia que com no hi caben les 3 capes en una mateixa línia, la tercera capa baixa a la següent línia:</p>
+    <hr><br>
+    <div class="d5">
+        <div class="black-box">
+            <p class="capa1">capa 1</p>
+            <p class="capa2">capa 2</p>
+            <p class="capa3">capa 3</p>
+
+        </div>
+        <div class="black-box-26">
+            <p class="capa1-26">capa 1</p>
+            <p class="capa2-26">capa 2</p>
+            <p class="capa3-26">capa 3</p>
+
+        </div>
+</div>
+<br><hr>
+    <p>27. Modifica l'exercici anterior, perquè ara apareguin en una pàgina web (sense marges), una capa a
+        l'esquerra i l'altra a la dreta, com es mostra a continuació:</p>
+    <hr><br>
+    <div class="d5">
+        <div class="black-box-227">
+            <p class="capa1-27">capa 1</p>
+            <p class="capa2-27">capa 2</p>
+            <p class="capa3-27">capa 3</p>
+
+        </div>
+        <div class="black-box-27">
+            <p class="capa1-26">capa 1</p>
+            <p class="capa2-26">capa 2</p>
+            <p class="capa3-26">capa 3</p>
+
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><hr>
+    <p>28. Torna a modificar l'exercici anterior per obtenir ara el següent disseny:</p>
+    <hr><br>
+    <div class="d5">
+        <div class="black-box-28">
+            <p class="capa1-27">capa 1</p>
+            <p class="capa2-27">capa 2</p>
+            <p class="capa3-27">capa 3</p>
+
+        </div>
+        <div class="black-box-288">
+            <p class="capa1-26">capa 1</p>
+            <p class="capa2-26">capa 2</p>
+            <p class="capa3-26">capa 3</p>
+
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><hr>
+    <p>29. Quan s'utilitza el posicionament flotant, de vegades interessa fer net, per a això hi ha la propietat
+        clear (esborrar), que permet modificar el comportament per defecte, per forçar un element a mostrar-se
+        per sota de qualsevol element flotant. La propietat admet 3 valors:</p>
+    <hr><br>
+
+
+<p>Posicionament NORMAL de les 3 capes</p>
+        <div class="n-29-r-1">CAPA1: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <div class="n-29-v-1">CAPA2: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <div class="n-29-b-1">CAPA3: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <p>·A continuació, posiciona la CAPA 1 per tal que floti a l’esquerra:</p>
+        <p>·Posicionament CAPA 1 : float left</p>
+        <div class="n-29-r-2">CAPA1: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <div class="n-29-v-2">CAPA2: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <div class="n-29-b-2">CAPA3: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <p>·Finalment, utilitza la propietat clear:left sobre la CAPA 3, per tal que aparegui a sota de la CAPA 1:</p>
+        <p>Posicionamiento CAPA1: Foat left i CAPA 3: clear left</p>
+        <div class="n-29-r-3">CAPA1: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <div class="n-29-v-3">CAPA2: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+        <div class="n-29-b-3">CAPA3: Text exmeple tipus Lorem ipsum creat pels alumnes de DAW2.</div>
+
+
+        <br><hr>
+        <p>30. Un altre exemple interessant de posicionament flotant en què cal fer servir la propietat clear, és per
+            dissenyar una estructura de paginació, que permet anar endavant i enrere .Per fer-ho, dissenya una pàgina
+            que inclogui una capa contenidora de color de fons gris, que no especifica ni ample ni alt, aquesta capa
+            conté dos elements posicionats a la banda esquerra i dreta respectivament (es pot utilitzar l'etiqueta
+            <span> per aplicar l'estil). Com veus, el text dels span sobresurt de la capa (sense width ni height) :</p>
+        <hr><br>
+
+        <div class="a-30">
+            <span class="s-30"> 
+               <- Anterior</span>
+               <span class="s-30-s">Siguiente -></span>
+        </div>
+        <br><hr>
+        <p>31. La propietat CSS visibilitat (visibility), si és oculta, no mostra els continguts de l'element, tot i que
+            si reserva l'espai ocupat per aquest element. Per exemple, dissenya la següent pàgina amb les 6 capes
+            posicionades de la següent manera:</p>
+        <hr><br>
+                <span class="span-1">Capa 1</span>
+                <span class="span-1">Capa 2</span>
+                <span class="span-1">Capa 3</span><br><br>
+                <span class="span-1">Capa 4</span>
+                <span class="span-1">Capa 5</span>
+                <span class="span-1">Capa 6</span>
+
+    <br><br>
+    <p>A continuació oculta amb la propietat anterior la capa 5, i comprova que s’obté el següent:</p>
+<br>
+    <span class="span-1">Capa 1</span>
+    <span class="span-1">Capa 2</span>
+    <span class="span-1">Capa 3</span><br><br>
+    <span class="span-1">Capa 4</span>
+    <span class="span-1" style="visibility: hidden;">Capa 5</span>
+    <span class="span-1">Capa 6</span>
+
+    <br><br>
+    <p>Hi ha una altra propietat CSS (display), on els principals valors utilitzats són 3:</p><p>■ display:none Oculta l'element fent que desaparegui de la pàgina. La resta d'elements de la
+        pàgina ocupen el seu espai. Per l'exemple anterior, s'oculta la capa 5:</p>
+    <br>
+    <span class="span-1">Capa 1</span>
+    <span class="span-1">Capa 2</span>
+    <span class="span-1">Capa 3</span><br><br>
+    <span class="span-1">Capa 4</span>
+    <span class="span-1" style="visibility: hidden; display: none;">Capa 5</span>
+    <span class="span-1">Capa 6</span>
+<br><br>
+<p>■ display:block Mostra l'element com si fos de bloc, sense importar el tipus d'element. Per
+    exemple, per a la pàgina inicial, afegeix 2 enllaços, que es mostrin un a costat de l'altre de
+    la següent manera:</p>
+    <br>
+    <span class="span-1">Capa 1</span>
+    <span class="span-1">Capa 2</span>
+    <span class="span-1">Capa 3</span><br><br>
+    <span class="span-1">Capa 4</span>
+    <span class="span-1">Capa 5</span>
+    <span class="span-1">Capa 6</span><br><br>
+    <a href="">Enlace 1</a>
+    <a href="">Enlace 2</a>
+<br><br>
+<p>A continuació, s'afegeix a l'enllaç 1 una classe CSS que ho mostra com si es tractés d'un element de bloc, i
+    el disseny de la pàgina ara hauria de ser com aquest:</p>
+    <span class="span-1">Capa 1</span>
+    <span class="span-1">Capa 2</span>
+    <span class="span-1">Capa 3</span><br><br>
+    <span class="span-1">Capa 4</span>
+    <span class="span-1">Capa 5</span>
+    <span class="span-1">Capa 6</span><br><br>
+    <a href="" style="display: block;">Enlace 1</a>
+    <a href="" style="display: block;">Enlace 2</a>
+    <br>
+    <p>■ display:inlineMostra l'element de línia, encara que sigui de tipus bloc. Per provar aquesta
+        propietat, dissenya la següent pàgina en la qual apareix una nova capa (la 7) com si fos un
+        element de línia, al costat d'un enllaç:</p>
+
+        <span class="span-1">Capa 7</span>
+        <a href="" style="display: inline;">Enlace 1</a>
+
+            </div>
+            <br><hr>
+        <p>32. Normalment els continguts d'un element es poden mostrar en l'espai reservat per a aquest element.
+            Però en ocasions el contingut d'un element no cap en l'espai reservat per a aquest element i es desborda.
+            La propietat overflow (desbordament) permet controlar aquestes situacions, i admet 4 valors possibles:</p>
+        <hr><br>
+        <div class="cajaaaaa">
+            <div class="caja-32" style="overflow: visible;"><h4>OVERFLOW: VISIBLE</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum, delectus quia pariatur </p></div>
+            <div class="caja-32" style="overflow: hidden;"><h4>OVERFLOW HIDDEN</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum, delectus quia pariatur nisi, dolorem incidunt accusantium iure magni facilis quas praesentium ad reprehenderit libero! Eaque corporis quae magnam eligendi!</p></div>
+            <div class="caja-32" style="overflow: scroll;"><h4>OVERFLOW SCROLL</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum, delectus quia pariatur nisi, dolorem incidunt accusantium iure magni facilis quas praesentium ad reprehenderit libero! Eaque corporis quae magnam eligendi!</p></div>
+            <div class="caja-32" style="overflow: auto;"><h4>OVERFLOW AUTO</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum, delectus quia pariatur nisi, dolorem incidunt accusantium iure magni facilis quas praesentium ad reprehenderit libero! Eaque corporis quae magnam eligendi!</p></div>
+        </div>
+        <br><br><hr>
+        <p>33. [opcional] Aprofitant que ja sabem posicionar elements, en aquest exercici es pretén explicar les
+            següents propietats pel que fa als marges:</p>
+        <hr><br>
+        <div class="div1">
+            Div 1 con margin inferior 150px
+        </div>
+     
+        <div class="div2">
+            Div 2 con margin inferior 200px
+
+        </div>
+        <div class="div3">            Div 3 con altura de 350px
+
+            <div class="div3_1">
+                DIV3_1 con altura e 200px
+            </div>
+            Esto demuestra como los margenes inferior y superior de los DIV 1 y 2 se han fusionado y ha quedado un margen total de 200 que es mayor entre 150 y 200
+        </div>
+    <a href="../index.html" class="a">VOLVER</a>
+</body>
+</html>
